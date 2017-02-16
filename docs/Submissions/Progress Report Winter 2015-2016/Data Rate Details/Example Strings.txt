@@ -1,0 +1,51 @@
+MCU->Sensor:
+{"all_data":1}
+{"sonic_us":[0],"pressure_bits":[617],"battery_bits":[671],"acc_g":[1.00,0.08,0.02],"velocity_ms":[0.02],"dist_mm":[0.00],"compass_degN":[110.30]}
+148 / 15
+
+Sensor->Server
+{"update_user": {"name": "Dummy",
+                           "markerStruct": {"paint_level_full": 100, "tank_pressure": 0, "last_modify": "eus 2016-03-01 14:03:30.339000", "paint_level": 0,
+                                                     "batteries": [0], "first_modify": "eus 2016-03-01 14:03:30.339000"}, "last_modify": "eus 2016-03-01 14:03:36.950000", "uid": 0,
+                           "posStruct": {"altitude": 0, "long": "E13555.237", "planet": "earth", "last_modify": "eus 2016-03-01 14:03:30.339000", ”lat": "N03742.179", "heading": 0, "first_modify": "eus 2016-03-01 14:03:30.339000"},
+                           "scanStruct": {"last_modify": "eus 2016-03-01 14:03:30.339000",
+                                                  "pointStruct": {"0": {"y": 0.0, "x": 0.0, "deg_N": 0.0, "dist_m": 0.0}},
+                                                  "first_modify": "eus 2016-03-01 14:03:30.339000"}, "first_modify": "eus 2016-03-01 14:03:30.359000"}
+}
+{"ME": 118}
+735 / 12
+
+
+HUD->Server
+{“get_user”: 312}
+{"update_user": {"name": "Dummy",
+                           "markerStruct": {"paint_level_full": 100, "tank_pressure": 0, "last_modify": "eus 2016-03-01 14:03:30.339000", "paint_level": 0,
+                                                     "batteries": [0], "first_modify": "eus 2016-03-01 14:03:30.339000"}, "last_modify": "eus 2016-03-01 14:03:36.950000", "uid": 0,
+                           "posStruct": {"altitude": 0,"long": "E13555.237", "planet": "earth", "last_modify": "eus 2016-03-01 14:03:30.339000", ”lat": "N03742.179", "heading": 0, "first_modify": "eus 2016-03-01 14:03:30.339000"},
+                           "scanStruct": {"last_modify": "eus 2016-03-01 14:03:30.339000",
+                                                  "pointStruct": {"0": {"y": 0.0, "x": 0.0, "deg_N": 0.0, "dist_m": 0.0}},
+                                                  "first_modify": "eus 2016-03-01 14:03:30.339000"}, "first_modify": "eus 2016-03-01 14:03:30.359000"}
+}
+18 / 735
+
+Pos (HUD)->Sensor
+{"pos_struct":1}
+“update_pos”: {"posStruct": {"altitude": 0, "long": "E13555.237", "planet": "earth", "last_modify": "eus 2016-03-01 14:03:30.339000", ”lat": "N03742.179", "heading": 0, "first_modify": "eus 2016-03-01 14:03:30.339000"}}
+220 / 17
+
+
+Extern Server->Server
+{“list_users”: 1}
+[312, 509, 129]
+{“get_user”: 312}
+{"update_user": {"name": "Dummy",
+                           "markerStruct": {"paint_level_full": 100, "tank_pressure": 0, "last_modify": "eus 2016-03-01 14:03:30.339000", "paint_level": 0,
+                                                     "batteries": [0], "first_modify": "eus 2016-03-01 14:03:30.339000"}, "last_modify": "eus 2016-03-01 14:03:36.950000", "uid": 0,
+                           "posStruct": {"altitude": 0, "long": "E13555.237", "planet": "earth", "last_modify": "eus 2016-03-01 14:03:30.339000", ”lat": "N03742.179", "heading": 0, "first_modify": "eus 2016-03-01 14:03:30.339000"},
+                           "scanStruct": {"last_modify": "eus 2016-03-01 14:03:30.339000",
+                                                  "pointStruct": {"0": {"y": 0.0, "x": 0.0, "deg_N": 0.0, "dist_m": 0.0}},
+                                                  "first_modify": "eus 2016-03-01 14:03:30.339000"}, "first_modify": "eus 2016-03-01 14:03:30.359000"}
+}
+18 / 735
+
+(Up/Down) Bytes/Sec * (Refresh Rate)

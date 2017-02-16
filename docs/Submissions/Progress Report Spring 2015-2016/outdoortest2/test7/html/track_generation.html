@@ -1,0 +1,275 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>track_generation</title><meta name="generator" content="MATLAB 8.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-05-16"><meta name="DC.source" content="track_generation.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Coordnates Track Generation</a></li><li><a href="#2">Datasets</a></li><li><a href="#3">Load RAW Data</a></li><li><a href="#4">Plot Data (Single Track)</a></li><li><a href="#5">Plot Data (Multiple Tracks)</a></li></ul></div><h2>Coordnates Track Generation<a name="1"></a></h2><p>@Author Brett</p><pre class="codeinput">close <span class="string">all</span>;
+clear;
+clc;
+
+plot_step_scale = 10;
+</pre><h2>Datasets<a name="2"></a></h2><p>data_size = 1:10; set  = {}; data = []; %SET 1 %lat data = [data; sqrt(data_size)]; %long data = [data;  data_size]; %bearing data = [data;  sin([data_size])]; %save data to data columns data = data'; set{length(set)+1} = data;</p><p>%SET 2 data = []; %lat data = [data; sqrt(2*[data_size])]; %long data = [data; data_size ]; %bearing data = [data; cos([data_size])]; %save data to data columns data = data'; set{length(set)+1} = data;</p><h2>Load RAW Data<a name="3"></a></h2><pre class="codeinput">filename = <span class="string">'matlab.mat'</span>;
+fprintf(<span class="string">'Loading Dataset: %s\n'</span>, filename);
+load(filename)
+set = {};
+<span class="keyword">for</span> c = 1:min(size(position))
+    col{c} = position(:,c);
+<span class="keyword">end</span>
+col{1} = col{1} - min(col{1});
+
+<span class="comment">% Dataset #1</span>
+data = [col{3}, col{4}, col{5}];
+set{length(set)+1} = data;
+
+<span class="comment">% Dataset #2</span>
+data = [col{7}, col{8}, col{9}];
+set{length(set)+1} = data;
+</pre><pre class="codeoutput">Loading Dataset: matlab.mat
+</pre><h2>Plot Data (Single Track)<a name="4"></a></h2><pre class="codeinput"><span class="keyword">for</span> s = 1:length(set)
+    data = set{s};
+    step = ceil((1/plot_step_scale)*length(data));
+    fprintf(<span class="string">'Plotting Dataset %.0f\n'</span>, s);
+    <span class="keyword">for</span> t = 1:step:length(data)
+        figure(<span class="string">'units'</span>,<span class="string">'normalized'</span>,<span class="string">'outerposition'</span>,[0 0 1 1]);
+        plot(data(:,2),   data(:,1),   <span class="string">'-b'</span>, <span class="keyword">...</span><span class="comment"> %track points Xlat, Ylong</span>
+             data(1,2),   data(1,1),   <span class="string">'og'</span>, <span class="keyword">...</span><span class="comment"> %starting point</span>
+             data(end,2), data(end,1), <span class="string">'or'</span>, <span class="keyword">...</span><span class="comment"> %ending point</span>
+             data(t,2),   data(t,1),   <span class="string">'ok'</span>);    <span class="comment">%current time</span>
+        xlabel(<span class="string">'Longitude'</span>); ylabel(<span class="string">'Latitude'</span>); axis <span class="string">square</span>; axis <span class="string">equal</span>;
+        title(sprintf(<span class="string">'GPS Position of %.0f'</span>, s));
+    <span class="keyword">end</span>
+    bearing_size = col{1}; <span class="comment">%1:length(data(:,3));</span>
+    <span class="keyword">for</span> t = 1:step:length(data)
+        figure(<span class="string">'units'</span>,<span class="string">'normalized'</span>,<span class="string">'outerposition'</span>,[0 0 1 1]);
+        plot(bearing_size,      data(:,1),   <span class="string">'-b'</span>, <span class="keyword">...</span><span class="comment"> %bearing over time</span>
+             bearing_size(1),   data(1,1),   <span class="string">'og'</span>, <span class="keyword">...</span><span class="comment"> %starting point</span>
+             bearing_size(end), data(end,1), <span class="string">'or'</span>, <span class="keyword">...</span><span class="comment"> %ending point</span>
+             bearing_size(t),   data(t,1),   <span class="string">'ok'</span>);    <span class="comment">%current time</span>
+        xlabel(<span class="string">'Time (Seconds)'</span>); ylabel(<span class="string">'Bearing'</span>);
+        title(sprintf(<span class="string">'GPS Bearing of %.0f'</span>, s));
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">Plotting Dataset 1
+Plotting Dataset 2
+</pre><img vspace="5" hspace="5" src="track_generation_01.png" alt=""> <img vspace="5" hspace="5" src="track_generation_02.png" alt=""> <img vspace="5" hspace="5" src="track_generation_03.png" alt=""> <img vspace="5" hspace="5" src="track_generation_04.png" alt=""> <img vspace="5" hspace="5" src="track_generation_05.png" alt=""> <img vspace="5" hspace="5" src="track_generation_06.png" alt=""> <img vspace="5" hspace="5" src="track_generation_07.png" alt=""> <img vspace="5" hspace="5" src="track_generation_08.png" alt=""> <img vspace="5" hspace="5" src="track_generation_09.png" alt=""> <img vspace="5" hspace="5" src="track_generation_10.png" alt=""> <img vspace="5" hspace="5" src="track_generation_11.png" alt=""> <img vspace="5" hspace="5" src="track_generation_12.png" alt=""> <img vspace="5" hspace="5" src="track_generation_13.png" alt=""> <img vspace="5" hspace="5" src="track_generation_14.png" alt=""> <img vspace="5" hspace="5" src="track_generation_15.png" alt=""> <img vspace="5" hspace="5" src="track_generation_16.png" alt=""> <img vspace="5" hspace="5" src="track_generation_17.png" alt=""> <img vspace="5" hspace="5" src="track_generation_18.png" alt=""> <img vspace="5" hspace="5" src="track_generation_19.png" alt=""> <img vspace="5" hspace="5" src="track_generation_20.png" alt=""> <img vspace="5" hspace="5" src="track_generation_21.png" alt=""> <img vspace="5" hspace="5" src="track_generation_22.png" alt=""> <img vspace="5" hspace="5" src="track_generation_23.png" alt=""> <img vspace="5" hspace="5" src="track_generation_24.png" alt=""> <img vspace="5" hspace="5" src="track_generation_25.png" alt=""> <img vspace="5" hspace="5" src="track_generation_26.png" alt=""> <img vspace="5" hspace="5" src="track_generation_27.png" alt=""> <img vspace="5" hspace="5" src="track_generation_28.png" alt=""> <img vspace="5" hspace="5" src="track_generation_29.png" alt=""> <img vspace="5" hspace="5" src="track_generation_30.png" alt=""> <img vspace="5" hspace="5" src="track_generation_31.png" alt=""> <img vspace="5" hspace="5" src="track_generation_32.png" alt=""> <img vspace="5" hspace="5" src="track_generation_33.png" alt=""> <img vspace="5" hspace="5" src="track_generation_34.png" alt=""> <img vspace="5" hspace="5" src="track_generation_35.png" alt=""> <img vspace="5" hspace="5" src="track_generation_36.png" alt=""> <img vspace="5" hspace="5" src="track_generation_37.png" alt=""> <img vspace="5" hspace="5" src="track_generation_38.png" alt=""> <img vspace="5" hspace="5" src="track_generation_39.png" alt=""> <img vspace="5" hspace="5" src="track_generation_40.png" alt=""> <h2>Plot Data (Multiple Tracks)<a name="5"></a></h2><pre class="codeinput">a = 1; b = 2;
+data_a = set{a};
+data_b = set{b};
+fprintf(<span class="string">'Plotting Dataset %.0f with %.0f\n'</span>, a, b);
+step = ceil((1/plot_step_scale)*length(data_a));
+<span class="keyword">for</span> t = 1:step:length(data_a)
+    figure(<span class="string">'units'</span>,<span class="string">'normalized'</span>,<span class="string">'outerposition'</span>,[0 0 1 1]);
+    plot(<span class="keyword">...</span><span class="comment"> %Data A:</span>
+         data_a(:,2),   data_a(:,1),   <span class="string">'-b'</span>, <span class="keyword">...</span><span class="comment"> %track points Xlat, Ylong</span>
+         data_a(1,2),   data_a(1,1),   <span class="string">'og'</span>, <span class="keyword">...</span><span class="comment"> %starting point</span>
+         data_a(end,2), data_a(end,1), <span class="string">'or'</span>, <span class="keyword">...</span><span class="comment"> %ending point</span>
+         data_a(t,2),   data_a(t,1),   <span class="string">'ok'</span>, <span class="keyword">...</span><span class="comment"> %current time</span>
+         <span class="keyword">...</span><span class="comment"> %Data B:</span>
+         data_b(:,2),   data_b(:,1),   <span class="string">'-k'</span>, <span class="keyword">...</span><span class="comment"> %track points Xlat, Ylong</span>
+         data_b(1,2),   data_b(1,1),   <span class="string">'og'</span>, <span class="keyword">...</span><span class="comment"> %starting point</span>
+         data_b(end,2), data_b(end,1), <span class="string">'or'</span>, <span class="keyword">...</span><span class="comment"> %ending point</span>
+         data_b(t,2),   data_b(t,1),   <span class="string">'ok'</span>);    <span class="comment">%current time</span>
+     xlabel(<span class="string">'Longitude'</span>); ylabel(<span class="string">'Latitude'</span>); axis <span class="string">square</span>; axis <span class="string">equal</span>;
+     title(sprintf(<span class="string">'GPS Position of %.0f and %.0f'</span>, a,b) );
+<span class="keyword">end</span>
+bearing_size = col{1}; <span class="comment">%1:length(data_a(:,3));</span>
+<span class="keyword">for</span> t = 1:step:length(data_a)
+    figure(<span class="string">'units'</span>,<span class="string">'normalized'</span>,<span class="string">'outerposition'</span>,[0 0 1 1]);
+    plot(<span class="keyword">...</span><span class="comment"> % Data A:</span>
+         bearing_size,      data_a(:,3),   <span class="string">'-b'</span>, <span class="keyword">...</span><span class="comment"> %bearing over time</span>
+         bearing_size(1),   data_a(1,3),   <span class="string">'og'</span>, <span class="keyword">...</span><span class="comment"> %starting point</span>
+         bearing_size(end), data_a(end,3), <span class="string">'or'</span>, <span class="keyword">...</span><span class="comment"> %ending point</span>
+         bearing_size(t),   data_a(t,3),   <span class="string">'ok'</span>, <span class="keyword">...</span><span class="comment"> %current time</span>
+         <span class="keyword">...</span><span class="comment">  % Data B:</span>
+         bearing_size,      data_b(:,3),   <span class="string">'-k'</span>, <span class="keyword">...</span><span class="comment"> %bearing over time</span>
+         bearing_size(1),   data_b(1,3),   <span class="string">'og'</span>, <span class="keyword">...</span><span class="comment"> %starting point</span>
+         bearing_size(end), data_b(end,3), <span class="string">'or'</span>, <span class="keyword">...</span><span class="comment"> %ending point</span>
+         bearing_size(t),   data_b(t,3),   <span class="string">'ok'</span>);    <span class="comment">%current time</span>
+	xlabel(<span class="string">'Time (Seconds)'</span>); ylabel(<span class="string">'Bearing'</span>);
+    title(sprintf(<span class="string">'GPS Bearing of %.0f and %.0f'</span>, a,b) );
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">Plotting Dataset 1 with 2
+</pre><img vspace="5" hspace="5" src="track_generation_41.png" alt=""> <img vspace="5" hspace="5" src="track_generation_42.png" alt=""> <img vspace="5" hspace="5" src="track_generation_43.png" alt=""> <img vspace="5" hspace="5" src="track_generation_44.png" alt=""> <img vspace="5" hspace="5" src="track_generation_45.png" alt=""> <img vspace="5" hspace="5" src="track_generation_46.png" alt=""> <img vspace="5" hspace="5" src="track_generation_47.png" alt=""> <img vspace="5" hspace="5" src="track_generation_48.png" alt=""> <img vspace="5" hspace="5" src="track_generation_49.png" alt=""> <img vspace="5" hspace="5" src="track_generation_50.png" alt=""> <img vspace="5" hspace="5" src="track_generation_51.png" alt=""> <img vspace="5" hspace="5" src="track_generation_52.png" alt=""> <img vspace="5" hspace="5" src="track_generation_53.png" alt=""> <img vspace="5" hspace="5" src="track_generation_54.png" alt=""> <img vspace="5" hspace="5" src="track_generation_55.png" alt=""> <img vspace="5" hspace="5" src="track_generation_56.png" alt=""> <img vspace="5" hspace="5" src="track_generation_57.png" alt=""> <img vspace="5" hspace="5" src="track_generation_58.png" alt=""> <img vspace="5" hspace="5" src="track_generation_59.png" alt=""> <img vspace="5" hspace="5" src="track_generation_60.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Coordnates Track Generation
+% @Author Brett
+close all;
+clear;
+clc;
+
+plot_step_scale = 10;
+%% Datasets
+% data_size = 1:10;
+% set  = {};
+% data = [];
+% %SET 1
+% %lat
+% data = [data; sqrt(data_size)];
+% %long
+% data = [data;  data_size];
+% %bearing
+% data = [data;  sin([data_size])];
+% %save data to data columns
+% data = data';
+% set{length(set)+1} = data;
+% 
+% %SET 2
+% data = [];
+% %lat
+% data = [data; sqrt(2*[data_size])];
+% %long
+% data = [data; data_size ];
+% %bearing
+% data = [data; cos([data_size])];
+% %save data to data columns
+% data = data';
+% set{length(set)+1} = data;
+
+%% Load RAW Data
+filename = 'matlab.mat';
+fprintf('Loading Dataset: %s\n', filename);
+load(filename)
+set = {};
+for c = 1:min(size(position))
+    col{c} = position(:,c);
+end
+col{1} = col{1} - min(col{1});
+
+% Dataset #1
+data = [col{3}, col{4}, col{5}];
+set{length(set)+1} = data;
+
+% Dataset #2
+data = [col{7}, col{8}, col{9}];
+set{length(set)+1} = data;
+
+
+
+%% Plot Data (Single Track)
+for s = 1:length(set)
+    data = set{s};
+    step = ceil((1/plot_step_scale)*length(data));
+    fprintf('Plotting Dataset %.0f\n', s);
+    for t = 1:step:length(data)
+        figure('units','normalized','outerposition',[0 0 1 1]);
+        plot(data(:,2),   data(:,1),   '-b', ... %track points Xlat, Ylong
+             data(1,2),   data(1,1),   'og', ... %starting point
+             data(end,2), data(end,1), 'or', ... %ending point
+             data(t,2),   data(t,1),   'ok');    %current time
+        xlabel('Longitude'); ylabel('Latitude'); axis square; axis equal;
+        title(sprintf('GPS Position of %.0f', s));
+    end
+    bearing_size = col{1}; %1:length(data(:,3));
+    for t = 1:step:length(data)
+        figure('units','normalized','outerposition',[0 0 1 1]);
+        plot(bearing_size,      data(:,1),   '-b', ... %bearing over time
+             bearing_size(1),   data(1,1),   'og', ... %starting point
+             bearing_size(end), data(end,1), 'or', ... %ending point
+             bearing_size(t),   data(t,1),   'ok');    %current time
+        xlabel('Time (Seconds)'); ylabel('Bearing');
+        title(sprintf('GPS Bearing of %.0f', s));
+    end
+end
+
+%% Plot Data (Multiple Tracks)
+a = 1; b = 2;
+data_a = set{a};
+data_b = set{b};
+fprintf('Plotting Dataset %.0f with %.0f\n', a, b);
+step = ceil((1/plot_step_scale)*length(data_a));
+for t = 1:step:length(data_a)
+    figure('units','normalized','outerposition',[0 0 1 1]);
+    plot(... %Data A:
+         data_a(:,2),   data_a(:,1),   '-b', ... %track points Xlat, Ylong
+         data_a(1,2),   data_a(1,1),   'og', ... %starting point
+         data_a(end,2), data_a(end,1), 'or', ... %ending point
+         data_a(t,2),   data_a(t,1),   'ok', ... %current time
+         ... %Data B:
+         data_b(:,2),   data_b(:,1),   '-k', ... %track points Xlat, Ylong
+         data_b(1,2),   data_b(1,1),   'og', ... %starting point
+         data_b(end,2), data_b(end,1), 'or', ... %ending point
+         data_b(t,2),   data_b(t,1),   'ok');    %current time
+     xlabel('Longitude'); ylabel('Latitude'); axis square; axis equal;
+     title(sprintf('GPS Position of %.0f and %.0f', a,b) );
+end
+bearing_size = col{1}; %1:length(data_a(:,3));
+for t = 1:step:length(data_a)
+    figure('units','normalized','outerposition',[0 0 1 1]);
+    plot(... % Data A:
+         bearing_size,      data_a(:,3),   '-b', ... %bearing over time
+         bearing_size(1),   data_a(1,3),   'og', ... %starting point
+         bearing_size(end), data_a(end,3), 'or', ... %ending point
+         bearing_size(t),   data_a(t,3),   'ok', ... %current time
+         ...  % Data B:
+         bearing_size,      data_b(:,3),   '-k', ... %bearing over time
+         bearing_size(1),   data_b(1,3),   'og', ... %starting point
+         bearing_size(end), data_b(end,3), 'or', ... %ending point
+         bearing_size(t),   data_b(t,3),   'ok');    %current time
+	xlabel('Time (Seconds)'); ylabel('Bearing');
+    title(sprintf('GPS Bearing of %.0f and %.0f', a,b) );
+end
+
+##### SOURCE END #####
+--></body></html>

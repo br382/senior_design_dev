@@ -1,0 +1,52 @@
+#If alternate ADB installation method was used:
+#alias adb=$HOME/android-sdk-linux/platform-tools/adb
+#function adbsudo {
+#sudo $HOME/android-sdk-linux/platform-tools/adb "$@"
+#}
+#If ADB installed properly:
+function adbsudo {
+sudo adb "$@"
+}
+#Generally only works with Java native apps:
+function adbrun {
+adbsudo shell am start -n $1/$1.MainActivity
+}
+function adbimg {
+adbsudo shell screencap /sdcard/$1
+adbsudo pull /sdcard/$1
+adbsudo shell rm /sdcard/$1
+}
+function adbinstall {
+adbsudo install -r "$@"
+}
+#See all 
+function adblogcat {
+adbsudo shell logcat
+}
+#Type text to the keyboard:
+function adbtext {
+adbsudo shell input text "$@"
+}
+#Google it for more hardware/software keys:
+function adbkeys {
+adbsudo shell input keyevent "$@"
+}
+#Directional Pad buttons:
+function r {
+adbkeys 22
+}
+function lk {
+adbkeys 21
+}
+function u {
+adbkeys 19
+}
+function d {
+adbkeys 20
+}
+function e {
+adbkeys 23
+}
+function b {
+adbkeys 4
+}

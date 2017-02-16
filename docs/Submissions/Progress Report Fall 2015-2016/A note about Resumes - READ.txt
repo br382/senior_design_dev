@@ -1,0 +1,1 @@
+Resumes were merged to the exported PDF report using http://www.pdfmerge.com/ to make it look better.

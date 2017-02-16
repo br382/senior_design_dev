@@ -1,0 +1,5 @@
+ need to take info on PI end and
+save values to accX, accY, accZ, Roll, Pitch
+
+Then make boundries to determine
+when a paint level reading is valid

@@ -1,0 +1,9 @@
+
+BWR 10/7/15, starting looking into python with QGIS, ESRI shapefiles, and spatialite.
+Python Code and binary that works!!!! https://code.google.com/p/gmapcatcher/
+
+Research Sources:
+https://www.reddit.com/r/Python/comments/3dgaom/offline_street_maps_in_python
+https://code.google.com/p/gmapcatcher/
+http://www.gaia-gis.it/rasterlite2/Landsat-HowTo.pdf
+http://osgeo-org.1560.x6.nabble.com/offline-googlemaps-or-the-like-images-td4135689.html

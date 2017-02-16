@@ -1,0 +1,4 @@
+Possible tools to diagram the actual code written:
+
+http://epydoc.sourceforge.net/
+https://www.logilab.org/blogentry/6883

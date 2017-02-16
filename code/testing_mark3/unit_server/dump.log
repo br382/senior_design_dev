@@ -1,0 +1,185 @@
+{
+    "dump_timestamp": "EUS 2016-05-16 07:01:10.819165", 
+    "self.errors": [
+        "EUS 2016-05-16 06:59:20.355097 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:20.355222 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:20.356095 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 94, 'batteries': [4.8, 3.5], 'tank_pressure': 23, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9558', 'planet': 'earth', 'altitude': 83, 'heading': 77, 'long': '-75.1907'}, 'uid': 101, 'name': 'test uid 101'}`", 
+        "EUS 2016-05-16 06:59:20.427850 :: _getJSONin() :: Valid :: `{\"get_user\": 102}`", 
+        "EUS 2016-05-16 06:59:20.428204 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:20.428340 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:20.428464 :: _hSendUser() :: Valid :: UID 102", 
+        "EUS 2016-05-16 06:59:20.428583 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:20.428708 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:20.429426 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 27, 'batteries': [4.8, 3.5], 'tank_pressure': 2558, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9567', 'planet': 'earth', 'altitude': -90, 'heading': 146, 'long': '-75.1903'}, 'uid': 102, 'name': 'test uid 102'}`", 
+        "EUS 2016-05-16 06:59:21.186111 :: _getJSONin() :: Valid :: `{\"list_users\":1}`", 
+        "EUS 2016-05-16 06:59:21.186623 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:21.186806 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:21.186977 :: _hSendUser() :: Unable to Perform Operation :: 'get_user'", 
+        "EUS 2016-05-16 06:59:21.187189 :: _hListUsers() :: Unable to Perform Operation :: log() takes exactly 2 arguments (3 given)", 
+        "EUS 2016-05-16 06:59:21.187372 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:21.188095 :: _getJSONout() :: OUTPUT :: `[100, 101, 102]`", 
+        "EUS 2016-05-16 06:59:21.210944 :: _getJSONin() :: Valid :: `{\"get_user\": 100}`", 
+        "EUS 2016-05-16 06:59:21.211162 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:21.211247 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:21.211330 :: _hSendUser() :: Valid :: UID 100", 
+        "EUS 2016-05-16 06:59:21.211467 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:21.211655 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:21.212254 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 3, 'batteries': [4.8, 3.5], 'tank_pressure': 431, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9571', 'planet': 'earth', 'altitude': -19, 'heading': 192, 'long': '-75.1902'}, 'uid': 100, 'name': 'test uid 100'}`", 
+        "EUS 2016-05-16 06:59:21.242819 :: _getJSONin() :: Valid :: `{\"get_user\": 101}`", 
+        "EUS 2016-05-16 06:59:21.243127 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:21.243260 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:21.243386 :: _hSendUser() :: Valid :: UID 101", 
+        "EUS 2016-05-16 06:59:21.243569 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:21.243699 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:21.244480 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 94, 'batteries': [4.8, 3.5], 'tank_pressure': 23, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9558', 'planet': 'earth', 'altitude': 83, 'heading': 77, 'long': '-75.1907'}, 'uid': 101, 'name': 'test uid 101'}`", 
+        "EUS 2016-05-16 06:59:21.280605 :: _getJSONin() :: Valid :: `{\"get_user\": 102}`", 
+        "EUS 2016-05-16 06:59:21.280943 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:21.281057 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:21.281167 :: _hSendUser() :: Valid :: UID 102", 
+        "EUS 2016-05-16 06:59:21.281273 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:21.281382 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:21.281976 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 27, 'batteries': [4.8, 3.5], 'tank_pressure': 2558, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9567', 'planet': 'earth', 'altitude': -90, 'heading': 146, 'long': '-75.1903'}, 'uid': 102, 'name': 'test uid 102'}`", 
+        "EUS 2016-05-16 06:59:22.240364 :: _getJSONin() :: Valid :: `{\"list_users\":1}`", 
+        "EUS 2016-05-16 06:59:22.240671 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:22.240801 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:22.240927 :: _hSendUser() :: Unable to Perform Operation :: 'get_user'", 
+        "EUS 2016-05-16 06:59:22.241078 :: _hListUsers() :: Unable to Perform Operation :: log() takes exactly 2 arguments (3 given)", 
+        "EUS 2016-05-16 06:59:22.241205 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:22.241712 :: _getJSONout() :: OUTPUT :: `[100, 101, 102]`", 
+        "EUS 2016-05-16 06:59:22.270001 :: _getJSONin() :: Valid :: `{\"get_user\": 100}`", 
+        "EUS 2016-05-16 06:59:22.270508 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:22.270679 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:22.270843 :: _hSendUser() :: Valid :: UID 100", 
+        "EUS 2016-05-16 06:59:22.271006 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:22.271170 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:22.272001 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 3, 'batteries': [4.8, 3.5], 'tank_pressure': 431, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9571', 'planet': 'earth', 'altitude': -19, 'heading': 192, 'long': '-75.1902'}, 'uid': 100, 'name': 'test uid 100'}`", 
+        "EUS 2016-05-16 06:59:22.344641 :: _getJSONin() :: Valid :: `{\"get_user\": 101}`", 
+        "EUS 2016-05-16 06:59:22.345110 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:22.345282 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:22.345448 :: _hSendUser() :: Valid :: UID 101", 
+        "EUS 2016-05-16 06:59:22.345630 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:22.346123 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:22.347051 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 56, 'batteries': [4.8, 3.5], 'tank_pressure': 1732, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9574', 'planet': 'earth', 'altitude': -56, 'heading': 251, 'long': '-75.1891'}, 'uid': 101, 'name': 'test uid 101'}`", 
+        "EUS 2016-05-16 06:59:22.398782 :: _getJSONin() :: Valid :: `{\"get_user\": 102}`", 
+        "EUS 2016-05-16 06:59:22.399060 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:22.399153 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:22.399246 :: _hSendUser() :: Valid :: UID 102", 
+        "EUS 2016-05-16 06:59:22.399332 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:22.399496 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:22.400083 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 48, 'batteries': [4.8, 3.5], 'tank_pressure': 3066, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9566', 'planet': 'earth', 'altitude': -39, 'heading': 117, 'long': '-75.1908'}, 'uid': 102, 'name': 'test uid 102'}`", 
+        "EUS 2016-05-16 06:59:23.200722 :: _getJSONin() :: Valid :: `{\"list_users\":1}`", 
+        "EUS 2016-05-16 06:59:23.201073 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:23.201204 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:23.201331 :: _hSendUser() :: Unable to Perform Operation :: 'get_user'", 
+        "EUS 2016-05-16 06:59:23.201486 :: _hListUsers() :: Unable to Perform Operation :: log() takes exactly 2 arguments (3 given)", 
+        "EUS 2016-05-16 06:59:23.201613 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:23.202099 :: _getJSONout() :: OUTPUT :: `[100, 101, 102]`", 
+        "EUS 2016-05-16 06:59:23.217527 :: _getJSONin() :: Valid :: `{\"get_user\": 100}`", 
+        "EUS 2016-05-16 06:59:23.217749 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:23.217836 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:23.217919 :: _hSendUser() :: Valid :: UID 100", 
+        "EUS 2016-05-16 06:59:23.217999 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:23.218082 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:23.218574 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 17, 'batteries': [4.8, 3.5], 'tank_pressure': 1547, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.957', 'planet': 'earth', 'altitude': -84, 'heading': 240, 'long': '-75.1891'}, 'uid': 100, 'name': 'test uid 100'}`", 
+        "EUS 2016-05-16 06:59:23.235949 :: _getJSONin() :: Valid :: `{\"get_user\": 101}`", 
+        "EUS 2016-05-16 06:59:23.236213 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:23.236307 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:23.236401 :: _hSendUser() :: Valid :: UID 101", 
+        "EUS 2016-05-16 06:59:23.236485 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:23.236574 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:23.237166 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 56, 'batteries': [4.8, 3.5], 'tank_pressure': 1732, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9574', 'planet': 'earth', 'altitude': -56, 'heading': 251, 'long': '-75.1891'}, 'uid': 101, 'name': 'test uid 101'}`", 
+        "EUS 2016-05-16 06:59:23.252835 :: _getJSONin() :: Valid :: `{\"get_user\": 102}`", 
+        "EUS 2016-05-16 06:59:23.253057 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 06:59:23.253142 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 06:59:23.253224 :: _hSendUser() :: Valid :: UID 102", 
+        "EUS 2016-05-16 06:59:23.253302 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 06:59:23.253383 :: _hPing() :: Unable to Perform Operation :: 'ping'", 
+        "EUS 2016-05-16 06:59:23.253874 :: _getJSONout() :: OUTPUT :: `{'markerStruct': {'paint_level': 48, 'batteries': [4.8, 3.5], 'tank_pressure': 3066, 'tank_pressure_full': 3200, 'batteries_full': [5.1, 5.1]}, 'posStruct': {'lat': '39.9566', 'planet': 'earth', 'altitude': -39, 'heading': 117, 'long': '-75.1908'}, 'uid': 102, 'name': 'test uid 102'}`", 
+        "EUS 2016-05-16 07:01:10.817710 :: _getJSONin() :: Valid :: `{\"ping\":1}`", 
+        "EUS 2016-05-16 07:01:10.818015 :: _hUpdateMarker() :: Unable to Perform Operation :: 'update_marker'", 
+        "EUS 2016-05-16 07:01:10.818145 :: _hUpdatePos() :: Unable to Perform Operation :: 'update_pos'", 
+        "EUS 2016-05-16 07:01:10.818270 :: _hSendUser() :: Unable to Perform Operation :: 'get_user'", 
+        "EUS 2016-05-16 07:01:10.818397 :: _hListUsers() :: Unable to Perform Operation :: 'list_users'", 
+        "EUS 2016-05-16 07:01:10.818546 :: _hPing() :: Valid :: {u'ping': 1}", 
+        "EUS 2016-05-16 07:01:10.819056 :: _getJSONout() :: OUTPUT :: `1463400070.82`"
+    ], 
+    "self.in_json_obj": {
+        "ping": 1
+    }, 
+    "self.log_file": "dump.log", 
+    "self.out_json_obj": 1463400070.818516, 
+    "self.users": {
+        "100": {
+            "markerStruct": {
+                "batteries": [
+                    4.8, 
+                    3.5
+                ], 
+                "batteries_full": [
+                    5.1, 
+                    5.1
+                ], 
+                "paint_level": 86, 
+                "tank_pressure": 806, 
+                "tank_pressure_full": 3200
+            }, 
+            "name": "test uid 100", 
+            "posStruct": {
+                "altitude": -5, 
+                "heading": 120, 
+                "lat": "39.9566", 
+                "long": "-75.1891", 
+                "planet": "earth"
+            }, 
+            "uid": 100
+        }, 
+        "101": {
+            "markerStruct": {
+                "batteries": [
+                    4.8, 
+                    3.5
+                ], 
+                "batteries_full": [
+                    5.1, 
+                    5.1
+                ], 
+                "paint_level": 85, 
+                "tank_pressure": 220, 
+                "tank_pressure_full": 3200
+            }, 
+            "name": "test uid 101", 
+            "posStruct": {
+                "altitude": 68, 
+                "heading": 141, 
+                "lat": "39.9558", 
+                "long": "-75.1904", 
+                "planet": "earth"
+            }, 
+            "uid": 101
+        }, 
+        "102": {
+            "markerStruct": {
+                "batteries": [
+                    4.8, 
+                    3.5
+                ], 
+                "batteries_full": [
+                    5.1, 
+                    5.1
+                ], 
+                "paint_level": 70, 
+                "tank_pressure": 2149, 
+                "tank_pressure_full": 3200
+            }, 
+            "name": "test uid 102", 
+            "posStruct": {
+                "altitude": -13, 
+                "heading": 58, 
+                "lat": "39.9564", 
+                "long": "-75.1899", 
+                "planet": "earth"
+            }, 
+            "uid": 102
+        }
+    }
+}

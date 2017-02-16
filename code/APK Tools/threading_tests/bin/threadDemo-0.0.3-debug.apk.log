@@ -1,0 +1,109 @@
+D/skia    ( 2766): SkGraphics::Init() - BLTsville (CPU) dlopen success
+D/AndroidRuntime( 2766): 
+D/AndroidRuntime( 2766): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2766): CheckJNI is OFF
+D/dalvikvm( 2766): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2766): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2766): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2766): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2766): Calling main entry com.android.commands.input.Input
+I/Input   ( 2766): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_DPAD_CENTER, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=8517133, downTime=8517133, deviceId=-1, source=0x101 }
+I/Input   ( 2766): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_CENTER, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=8517133, downTime=8517133, deviceId=-1, source=0x101 }
+I/ActivityManager(  293): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.test.threaddemo/org.renpy.android.PythonActivity u=0} from pid 661
+D/AndroidRuntime( 2766): Shutting down VM
+I/AndroidRuntime( 2766): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2778): Late-enabling CheckJNI
+I/ActivityManager(  293): Start proc org.test.threaddemo:python for activity org.test.threaddemo/org.renpy.android.PythonActivity: pid=2778 uid=10013 gids={1015, 3003, 1028}
+W/ResourceType( 2778): No package identifier when getting value for resource number 0x00000000
+V/python  ( 2778): metadata fullscreen is1
+I/SDLSurface( 2778): Surface will NOT be transparent
+W/ResourceType( 2778): No package identifier when getting value for resource number 0x00000000
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libsdl.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libsdl.so 0x41352c78
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libsdl_image.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libsdl_image.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/lib/libsdl_image.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libsdl_ttf.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libsdl_ttf.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/lib/libsdl_ttf.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libsdl_mixer.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libsdl_mixer.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/lib/libsdl_mixer.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libpython2.7.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libpython2.7.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/lib/libpython2.7.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libapplication.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libapplication.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/lib/libapplication.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libsdl_main.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libsdl_main.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/lib/libsdl_main.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/_io.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/_io.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/_io.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/unicodedata.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/unicodedata.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/unicodedata.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/lib/libsqlite3.so 0x41352c78
+D/dalvikvm( 2778): Added shared lib /data/data/org.test.threaddemo/lib/libsqlite3.so 0x41352c78
+D/dalvikvm( 2778): No JNI_OnLoad found in /data/data/org.test.threaddemo/lib/libsqlite3.so 0x41352c78, skipping init
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/_sqlite3.so 0x41352c78
+D/dalvikvm( 2778): Trying to load lib /data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload/_imaging.so 0x41352c78
+I/python  ( 2778): Starting audio thread
+I/libEGL  ( 2778): Processor type: omap4430
+I/libEGL  ( 2778): egl.cfg: entry POWERVR_SGX540_120 omap4430
+I/libEGL  ( 2778): Picked EGL type 'POWERVR_SGX540_120' for processor 'omap4430'
+D/libEGL  ( 2778): loaded /vendor/lib/egl/libEGL_POWERVR_SGX540_120.so
+D/libEGL  ( 2778): loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
+D/libEGL  ( 2778): loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
+D/skia    ( 2766): SkGraphics::Term() dlclose() BLTsville (CPU) 
+D/OpenGLRenderer( 2778): Enabling debug mode 0
+I/SDLSurface( 2778): Choose egl configuration
+I/SDLSurface( 2778): Try to use graphics config R8G8B8A8S8
+W/SDLSurface( 2778): Create egl surface
+I/ActivityManager(  293): Displayed org.test.threaddemo/org.renpy.android.PythonActivity: +366ms
+I/libSDL  ( 2778): Physical screen resolution is 428x240
+I/dalvikvm-heap( 2778): Grow heap (frag case) to 6.639MB for 524304-byte allocation
+I/Python: ( 2778): Layout Triggered, Keyboard_height: 32
+I/dalvikvm-heap( 2778): Grow heap (frag case) to 7.138MB for 524304-byte allocation
+I/python  ( 2778): presplash-fit is null
+I/python  ( 2778): presplash (fit=null) mx=0.417969,my=0.234375
+I/libSDL  ( 2778): Physical screen resolution is 428x240
+I/python  ( 2778): Initialize Python for Android
+I/Python: ( 2778): Layout Triggered, Keyboard_height: 0
+I/python  ( 2778): ['/data/data/org.test.threaddemo/files/lib/python2.7/site-packages', '/data/data/org.test.threaddemo/files/lib/site-python']
+I/python  ( 2778): Android path ['/data/data/org.test.threaddemo/files/lib/python27.zip', '/data/data/org.test.threaddemo/files/lib/python2.7', '/data/data/org.test.threaddemo/files/lib/python2.7/lib-dynload', '/data/data/org.test.threaddemo/files/lib/python2.7/site-packages', '/data/data/org.test.threaddemo/files', '/data/data/org.test.threaddemo/files/_applibs']
+I/python  ( 2778): Android kivy bootstrap done. __name__ is __main__
+I/python  ( 2778): Run user program, change dir and execute main.py
+I/python  ( 2778): Spawning...
+I/python  ( 2778): Working...
+I/python  ( 2778): Thread-1: Thu Apr 14 16:13:38 2016
+I/python  ( 2778): Thread-2: Thu Apr 14 16:13:39 2016
+I/python  ( 2778): Thread-1: Thu Apr 14 16:13:39 2016
+I/python  ( 2778): Thread-1: Thu Apr 14 16:13:40 2016
+W/SocketClient(   92): write error (Broken pipe)
+W/ThrottleService(  293): unable to find stats for iface rmnet0
+I/python  ( 2778): Thread-2: Thu Apr 14 16:13:41 2016
+I/python  ( 2778): Thread-1: Thu Apr 14 16:13:41 2016
+I/python  ( 2778): Thread-1: Thu Apr 14 16:13:42 2016
+I/python  ( 2778): Thread-2: Thu Apr 14 16:13:43 2016
+I/python  ( 2778): Thread-2: Thu Apr 14 16:13:45 2016
+I/python  ( 2778): Thread-2: Thu Apr 14 16:13:47 2016
+I/python  ( 2778): Exiting...
+I/python  ( 2778): Python for android ended.
+I/AndroidRuntime( 2778): VM exiting with result code 0, cleanup skipped.
+I/WindowState(  293): WIN DEATH: Window{414f8d70 org.test.threaddemo/org.renpy.android.PythonActivity paused=false}
+I/ActivityManager(  293): Process org.test.threaddemo:python (pid 2778) has died.
+W/WindowManager(  293): Force-removing child win Window{415766e8 SurfaceView paused=false} from container Window{414f8d70 org.test.threaddemo/org.renpy.android.PythonActivity paused=false}
+W/ActivityManager(  293): Force removing ActivityRecord{4155d088 org.test.threaddemo/org.renpy.android.PythonActivity}: app died, no saved state
+W/WindowManager(  293): Failed looking up window
+W/WindowManager(  293): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@415ccbc0 does not exist
+W/WindowManager(  293): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7790)
+W/WindowManager(  293): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7781)
+W/WindowManager(  293): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:854)
+W/WindowManager(  293): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:449)
+W/WindowManager(  293): 	at dalvik.system.NativeStart.run(Native Method)
+I/WindowState(  293): WIN DEATH: null
+W/InputMethodManagerService(  293): Got RemoteException sending setActive(false) notification to pid 2778 uid 10013
+I/NAVD.GPSC_MGP(  848): +++ gpsc_mgp_process_msg: Ephemeris Report Received. SV ID: 28 +++
+

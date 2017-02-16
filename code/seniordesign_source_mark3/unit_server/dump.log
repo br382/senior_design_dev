@@ -1,0 +1,226 @@
+{
+    "dump_timestamp": "EUS 2016-05-06 23:07:37.964429", 
+    "self.errors": [
+        "EUS 2016-05-06 23:07:35.837662 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.838024 :: _hSendUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.838148 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.838267 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.838467 :: _getJSONout() :: OUTPUT :: `{}`", 
+        "EUS 2016-05-06 23:07:35.897512 :: _getJSONin() :: Valid :: `{\"list_users\":1}`", 
+        "EUS 2016-05-06 23:07:35.897714 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.897792 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.897865 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.897961 :: _hSendUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.898054 :: _hListUsers() :: Valid :: [u'1fc1f316-150b-4f69-951f-c04a21e4b070', u'dd75d956-d1ea-41f3-b85a-5c549c677ddc']", 
+        "EUS 2016-05-06 23:07:35.898126 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.898281 :: _getJSONout() :: OUTPUT :: `[u'1fc1f316-150b-4f69-951f-c04a21e4b070', u'dd75d956-d1ea-41f3-b85a-5c549c677ddc']`", 
+        "EUS 2016-05-06 23:07:35.916735 :: _getJSONin() :: Valid :: `{\"get_user\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\"}`", 
+        "EUS 2016-05-06 23:07:35.916893 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.916964 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.917030 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.917257 :: _hSendUser() :: Valid :: UID 1fc1f316-150b-4f69-951f-c04a21e4b070", 
+        "EUS 2016-05-06 23:07:35.917323 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.917388 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.917742 :: _getJSONout() :: OUTPUT :: `{'uid': u'1fc1f316-150b-4f69-951f-c04a21e4b070', 'markerStruct': {'paint_level_full': 100, 'tank_pressure': 200.26699029126223, 'last_modify': u'EUS 2016-05-06 22:36:36.855559', 'paint_level': 30, 'batteries': [5.068, 1.834990291262136], 'batteries_full': [5.0, 5.0], 'tank_pressure_full': 3200.0, 'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'name': u'1fc1f316-150b-4f69-951f-c04a21e4b070', 'last_modify': u'EUS 2016-05-06 23:07:35.832515', 'posStruct': {'last_modify': u'EUS 2016-05-06 22:36:36.855559', 'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'scanStruct': {u'pointStruct': {u'0': {u'y': 0.0, u'x': 0.0, u'deg_N': 0.0, u'dist_m': 0.0}}, u'last_modify': u'EUS 2016-05-06 22:36:36.855559', u'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'first_modify': u'EUS 2016-05-06 22:36:37.005144'}`", 
+        "EUS 2016-05-06 23:07:35.970762 :: _getJSONin() :: Valid :: `{\"get_user\": \"dd75d956-d1ea-41f3-b85a-5c549c677ddc\"}`", 
+        "EUS 2016-05-06 23:07:35.970917 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.970988 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.971053 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.971283 :: _hSendUser() :: Valid :: UID dd75d956-d1ea-41f3-b85a-5c549c677ddc", 
+        "EUS 2016-05-06 23:07:35.971349 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.971415 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:35.971774 :: _getJSONout() :: OUTPUT :: `{'uid': u'dd75d956-d1ea-41f3-b85a-5c549c677ddc', 'markerStruct': {'paint_level_full': 100, 'tank_pressure': 194.19902912621353, 'last_modify': u'EUS 2016-05-06 22:31:44.090370', 'paint_level': 28, 'batteries': [1.8058640776699029, 1.8058640776699029], 'batteries_full': [5.0, 5.0], 'tank_pressure_full': 3200.0, 'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'name': u'dd75d956-d1ea-41f3-b85a-5c549c677ddc', 'last_modify': u'EUS 2016-05-06 22:36:34.396201', 'posStruct': {'last_modify': u'EUS 2016-05-06 22:31:44.090370', 'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'scanStruct': {u'pointStruct': {u'0': {u'y': 0.0, u'x': 0.0, u'deg_N': 0.0, u'dist_m': 0.0}}, u'last_modify': u'EUS 2016-05-06 22:31:44.090370', u'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'first_modify': u'EUS 2016-05-06 22:31:44.256670'}`", 
+        "EUS 2016-05-06 23:07:36.322404 :: _getJSONin() :: Valid :: `{\"update_user\": {\"uid\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\", \"markerStruct\": {\"paint_level\": 30, \"paint_level_full\": 100, \"batteries\": [5.068, 1.834990291262136], \"tank_pressure\": 188.13106796116506, \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"tank_pressure_full\": 3200.0, \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"batteries_full\": [5.0, 5.0]}, \"name\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\", \"last_modify\": \"EUS 2016-05-06 23:07:36.319131\", \"posStruct\": {\"altitude\": 0, \"long\": \"\", \"planet\": \"earth\", \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"lat\": \"\", \"heading\": 10.90122961970062, \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\"}, \"scanStruct\": {\"pointStruct\": {\"0\": {\"y\": 0.0, \"x\": 0.0, \"deg_N\": 0.0, \"dist_m\": 0.0}}, \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\"}, \"first_modify\": \"EUS 2016-05-06 22:36:37.005144\"}}`", 
+        "EUS 2016-05-06 23:07:36.323898 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.324056 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.324228 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.324597 :: _hSendUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.324718 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.324836 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.325073 :: _getJSONout() :: OUTPUT :: `{}`", 
+        "EUS 2016-05-06 23:07:36.881427 :: _getJSONin() :: Valid :: `{\"list_users\":1}`", 
+        "EUS 2016-05-06 23:07:36.881579 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.881649 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.881713 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.881797 :: _hSendUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.881912 :: _hListUsers() :: Valid :: [u'1fc1f316-150b-4f69-951f-c04a21e4b070', u'dd75d956-d1ea-41f3-b85a-5c549c677ddc']", 
+        "EUS 2016-05-06 23:07:36.881978 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.882114 :: _getJSONout() :: OUTPUT :: `[u'1fc1f316-150b-4f69-951f-c04a21e4b070', u'dd75d956-d1ea-41f3-b85a-5c549c677ddc']`", 
+        "EUS 2016-05-06 23:07:36.892392 :: _getJSONin() :: Valid :: `{\"get_user\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\"}`", 
+        "EUS 2016-05-06 23:07:36.892551 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.892620 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.892684 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.892951 :: _hSendUser() :: Valid :: UID 1fc1f316-150b-4f69-951f-c04a21e4b070", 
+        "EUS 2016-05-06 23:07:36.893017 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.893083 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.893444 :: _getJSONout() :: OUTPUT :: `{'uid': u'1fc1f316-150b-4f69-951f-c04a21e4b070', 'markerStruct': {'paint_level_full': 100, 'tank_pressure': 188.13106796116506, 'last_modify': u'EUS 2016-05-06 22:36:36.855559', 'paint_level': 30, 'batteries': [5.068, 1.834990291262136], 'batteries_full': [5.0, 5.0], 'tank_pressure_full': 3200.0, 'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'name': u'1fc1f316-150b-4f69-951f-c04a21e4b070', 'last_modify': u'EUS 2016-05-06 23:07:36.319131', 'posStruct': {'last_modify': u'EUS 2016-05-06 22:36:36.855559', 'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'scanStruct': {u'pointStruct': {u'0': {u'y': 0.0, u'x': 0.0, u'deg_N': 0.0, u'dist_m': 0.0}}, u'last_modify': u'EUS 2016-05-06 22:36:36.855559', u'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'first_modify': u'EUS 2016-05-06 22:36:37.005144'}`", 
+        "EUS 2016-05-06 23:07:36.908983 :: _getJSONin() :: Valid :: `{\"get_user\": \"dd75d956-d1ea-41f3-b85a-5c549c677ddc\"}`", 
+        "EUS 2016-05-06 23:07:36.909139 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.909208 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.909273 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.909501 :: _hSendUser() :: Valid :: UID dd75d956-d1ea-41f3-b85a-5c549c677ddc", 
+        "EUS 2016-05-06 23:07:36.909564 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.909631 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:36.910110 :: _getJSONout() :: OUTPUT :: `{'uid': u'dd75d956-d1ea-41f3-b85a-5c549c677ddc', 'markerStruct': {'paint_level_full': 100, 'tank_pressure': 194.19902912621353, 'last_modify': u'EUS 2016-05-06 22:31:44.090370', 'paint_level': 28, 'batteries': [1.8058640776699029, 1.8058640776699029], 'batteries_full': [5.0, 5.0], 'tank_pressure_full': 3200.0, 'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'name': u'dd75d956-d1ea-41f3-b85a-5c549c677ddc', 'last_modify': u'EUS 2016-05-06 22:36:34.396201', 'posStruct': {'last_modify': u'EUS 2016-05-06 22:31:44.090370', 'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'scanStruct': {u'pointStruct': {u'0': {u'y': 0.0, u'x': 0.0, u'deg_N': 0.0, u'dist_m': 0.0}}, u'last_modify': u'EUS 2016-05-06 22:31:44.090370', u'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'first_modify': u'EUS 2016-05-06 22:31:44.256670'}`", 
+        "EUS 2016-05-06 23:07:37.403006 :: _getJSONin() :: Valid :: `{\"update_user\": {\"uid\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\", \"markerStruct\": {\"paint_level\": 30, \"paint_level_full\": 100, \"batteries\": [5.068, 1.834990291262136], \"tank_pressure\": 188.13106796116506, \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"tank_pressure_full\": 3200.0, \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"batteries_full\": [5.0, 5.0]}, \"name\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\", \"last_modify\": \"EUS 2016-05-06 23:07:37.400711\", \"posStruct\": {\"altitude\": 0, \"long\": \"\", \"planet\": \"earth\", \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"lat\": \"\", \"heading\": 10.90122961970062, \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\"}, \"scanStruct\": {\"pointStruct\": {\"0\": {\"y\": 0.0, \"x\": 0.0, \"deg_N\": 0.0, \"dist_m\": 0.0}}, \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\"}, \"first_modify\": \"EUS 2016-05-06 22:36:37.005144\"}}`", 
+        "EUS 2016-05-06 23:07:37.403844 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.403937 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.404004 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.404355 :: _hSendUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.404450 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.404538 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.404704 :: _getJSONout() :: OUTPUT :: `{}`", 
+        "EUS 2016-05-06 23:07:37.900864 :: _getJSONin() :: Valid :: `{\"list_users\":1}`", 
+        "EUS 2016-05-06 23:07:37.901104 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.901231 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.901351 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.901503 :: _hSendUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.901646 :: _hListUsers() :: Valid :: [u'1fc1f316-150b-4f69-951f-c04a21e4b070', u'dd75d956-d1ea-41f3-b85a-5c549c677ddc']", 
+        "EUS 2016-05-06 23:07:37.901762 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.901992 :: _getJSONout() :: OUTPUT :: `[u'1fc1f316-150b-4f69-951f-c04a21e4b070', u'dd75d956-d1ea-41f3-b85a-5c549c677ddc']`", 
+        "EUS 2016-05-06 23:07:37.924720 :: _getJSONin() :: Valid :: `{\"get_user\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\"}`", 
+        "EUS 2016-05-06 23:07:37.924981 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.925064 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.925141 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.925406 :: _hSendUser() :: Valid :: UID 1fc1f316-150b-4f69-951f-c04a21e4b070", 
+        "EUS 2016-05-06 23:07:37.925479 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.925550 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.926000 :: _getJSONout() :: OUTPUT :: `{'uid': u'1fc1f316-150b-4f69-951f-c04a21e4b070', 'markerStruct': {'paint_level_full': 100, 'tank_pressure': 188.13106796116506, 'last_modify': u'EUS 2016-05-06 22:36:36.855559', 'paint_level': 30, 'batteries': [5.068, 1.834990291262136], 'batteries_full': [5.0, 5.0], 'tank_pressure_full': 3200.0, 'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'name': u'1fc1f316-150b-4f69-951f-c04a21e4b070', 'last_modify': u'EUS 2016-05-06 23:07:37.400711', 'posStruct': {'last_modify': u'EUS 2016-05-06 22:36:36.855559', 'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'scanStruct': {u'pointStruct': {u'0': {u'y': 0.0, u'x': 0.0, u'deg_N': 0.0, u'dist_m': 0.0}}, u'last_modify': u'EUS 2016-05-06 22:36:36.855559', u'first_modify': u'EUS 2016-05-06 22:36:36.855559'}, 'first_modify': u'EUS 2016-05-06 22:36:37.005144'}`", 
+        "EUS 2016-05-06 23:07:37.936538 :: _getJSONin() :: Valid :: `{\"update_user\": {\"uid\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\", \"markerStruct\": {\"paint_level\": 30, \"paint_level_full\": 100, \"batteries\": [5.068, 1.834990291262136], \"tank_pressure\": 188.13106796116506, \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"tank_pressure_full\": 3200.0, \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"batteries_full\": [5.0, 5.0]}, \"name\": \"1fc1f316-150b-4f69-951f-c04a21e4b070\", \"last_modify\": \"EUS 2016-05-06 23:07:37.934074\", \"posStruct\": {\"altitude\": 0, \"long\": \"\", \"planet\": \"earth\", \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"lat\": \"\", \"heading\": 10.90122961970062, \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\"}, \"scanStruct\": {\"pointStruct\": {\"0\": {\"y\": 0.0, \"x\": 0.0, \"deg_N\": 0.0, \"dist_m\": 0.0}}, \"last_modify\": \"EUS 2016-05-06 22:36:36.855559\", \"first_modify\": \"EUS 2016-05-06 22:36:36.855559\"}, \"first_modify\": \"EUS 2016-05-06 22:36:37.005144\"}}`", 
+        "EUS 2016-05-06 23:07:37.937618 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.937760 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.937851 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.938210 :: _hSendUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.938558 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.940293 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.940599 :: _getJSONout() :: OUTPUT :: `{}`", 
+        "EUS 2016-05-06 23:07:37.963311 :: _getJSONin() :: Valid :: `{\"get_user\": \"dd75d956-d1ea-41f3-b85a-5c549c677ddc\"}`", 
+        "EUS 2016-05-06 23:07:37.963477 :: _hUpdateUser() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.963550 :: _hUpdateMarker() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.963615 :: _hUpdatePos() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.963846 :: _hSendUser() :: Valid :: UID dd75d956-d1ea-41f3-b85a-5c549c677ddc", 
+        "EUS 2016-05-06 23:07:37.963910 :: _hListUsers() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.963975 :: _hPing() :: Unable to Perform Operation", 
+        "EUS 2016-05-06 23:07:37.964370 :: _getJSONout() :: OUTPUT :: `{'uid': u'dd75d956-d1ea-41f3-b85a-5c549c677ddc', 'markerStruct': {'paint_level_full': 100, 'tank_pressure': 194.19902912621353, 'last_modify': u'EUS 2016-05-06 22:31:44.090370', 'paint_level': 28, 'batteries': [1.8058640776699029, 1.8058640776699029], 'batteries_full': [5.0, 5.0], 'tank_pressure_full': 3200.0, 'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'name': u'dd75d956-d1ea-41f3-b85a-5c549c677ddc', 'last_modify': u'EUS 2016-05-06 22:36:34.396201', 'posStruct': {'last_modify': u'EUS 2016-05-06 22:31:44.090370', 'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'scanStruct': {u'pointStruct': {u'0': {u'y': 0.0, u'x': 0.0, u'deg_N': 0.0, u'dist_m': 0.0}}, u'last_modify': u'EUS 2016-05-06 22:31:44.090370', u'first_modify': u'EUS 2016-05-06 22:31:44.090370'}, 'first_modify': u'EUS 2016-05-06 22:31:44.256670'}`"
+    ], 
+    "self.in_json_obj": {
+        "get_user": "dd75d956-d1ea-41f3-b85a-5c549c677ddc"
+    }, 
+    "self.log_file": "dump.log", 
+    "self.out_json_obj": {
+        "first_modify": "EUS 2016-05-06 22:31:44.256670", 
+        "last_modify": "EUS 2016-05-06 22:36:34.396201", 
+        "markerStruct": {
+            "batteries": [
+                1.8058640776699029, 
+                1.8058640776699029
+            ], 
+            "batteries_full": [
+                5.0, 
+                5.0
+            ], 
+            "first_modify": "EUS 2016-05-06 22:31:44.090370", 
+            "last_modify": "EUS 2016-05-06 22:31:44.090370", 
+            "paint_level": 28, 
+            "paint_level_full": 100, 
+            "tank_pressure": 194.19902912621353, 
+            "tank_pressure_full": 3200.0
+        }, 
+        "name": "dd75d956-d1ea-41f3-b85a-5c549c677ddc", 
+        "posStruct": {
+            "first_modify": "EUS 2016-05-06 22:31:44.090370", 
+            "last_modify": "EUS 2016-05-06 22:31:44.090370"
+        }, 
+        "scanStruct": {
+            "first_modify": "EUS 2016-05-06 22:31:44.090370", 
+            "last_modify": "EUS 2016-05-06 22:31:44.090370", 
+            "pointStruct": {
+                "0": {
+                    "deg_N": 0.0, 
+                    "dist_m": 0.0, 
+                    "x": 0.0, 
+                    "y": 0.0
+                }
+            }
+        }, 
+        "uid": "dd75d956-d1ea-41f3-b85a-5c549c677ddc"
+    }, 
+    "self.users": {
+        "1fc1f316-150b-4f69-951f-c04a21e4b070": {
+            "first_modify": "EUS 2016-05-06 22:36:37.005144", 
+            "last_modify": "EUS 2016-05-06 23:07:37.400711", 
+            "markerStruct": {
+                "batteries": [
+                    5.068, 
+                    1.834990291262136
+                ], 
+                "batteries_full": [
+                    5.0, 
+                    5.0
+                ], 
+                "first_modify": "EUS 2016-05-06 22:36:36.855559", 
+                "last_modify": "EUS 2016-05-06 22:36:36.855559", 
+                "paint_level": 30, 
+                "paint_level_full": 100, 
+                "tank_pressure": 188.13106796116506, 
+                "tank_pressure_full": 3200.0
+            }, 
+            "name": "1fc1f316-150b-4f69-951f-c04a21e4b070", 
+            "posStruct": {
+                "first_modify": "EUS 2016-05-06 22:36:36.855559", 
+                "last_modify": "EUS 2016-05-06 22:36:36.855559"
+            }, 
+            "scanStruct": {
+                "first_modify": "EUS 2016-05-06 22:36:36.855559", 
+                "last_modify": "EUS 2016-05-06 22:36:36.855559", 
+                "pointStruct": {
+                    "0": {
+                        "deg_N": 0.0, 
+                        "dist_m": 0.0, 
+                        "x": 0.0, 
+                        "y": 0.0
+                    }
+                }
+            }, 
+            "uid": "1fc1f316-150b-4f69-951f-c04a21e4b070"
+        }, 
+        "dd75d956-d1ea-41f3-b85a-5c549c677ddc": {
+            "first_modify": "EUS 2016-05-06 22:31:44.256670", 
+            "last_modify": "EUS 2016-05-06 22:36:34.396201", 
+            "markerStruct": {
+                "batteries": [
+                    1.8058640776699029, 
+                    1.8058640776699029
+                ], 
+                "batteries_full": [
+                    5.0, 
+                    5.0
+                ], 
+                "first_modify": "EUS 2016-05-06 22:31:44.090370", 
+                "last_modify": "EUS 2016-05-06 22:31:44.090370", 
+                "paint_level": 28, 
+                "paint_level_full": 100, 
+                "tank_pressure": 194.19902912621353, 
+                "tank_pressure_full": 3200.0
+            }, 
+            "name": "dd75d956-d1ea-41f3-b85a-5c549c677ddc", 
+            "posStruct": {
+                "first_modify": "EUS 2016-05-06 22:31:44.090370", 
+                "last_modify": "EUS 2016-05-06 22:31:44.090370"
+            }, 
+            "scanStruct": {
+                "first_modify": "EUS 2016-05-06 22:31:44.090370", 
+                "last_modify": "EUS 2016-05-06 22:31:44.090370", 
+                "pointStruct": {
+                    "0": {
+                        "deg_N": 0.0, 
+                        "dist_m": 0.0, 
+                        "x": 0.0, 
+                        "y": 0.0
+                    }
+                }
+            }, 
+            "uid": "dd75d956-d1ea-41f3-b85a-5c549c677ddc"
+        }
+    }
+}

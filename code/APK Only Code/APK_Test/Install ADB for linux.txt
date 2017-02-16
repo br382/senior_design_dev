@@ -1,0 +1,16 @@
+#To install adb on linux
+#https://androidonlinux.wordpress.com/2013/05/12/setting-up-adb-on-linux/
+
+#install java pre-rec
+sudo apt-get purge openjdk*
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+#or use: sudo apt-get install openjdk-7-jdk
+
+#now installing the Android SDK
+#http://developer.android.com/sdk/index.html
+#download the SDK
+#tar -xfv the file (extract)
+
+#http://www.reconinstruments.com/developers/develop/a-how-to-guide/

@@ -1,0 +1,299 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Plotting Experimental Data Set</title><meta name="generator" content="MATLAB 8.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-11-16"><meta name="DC.source" content="USB_Power_Bank_Drain_Log.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Plotting Experimental Data Set</h1><pre class="codeinput"><span class="comment">%close all;</span>
+clear <span class="string">all</span>;
+clc;
+fig = 0;
+
+shunt_r = 0.1598; <span class="comment">%ohms</span>
+
+files = {<span class="string">'data_take2.csv'</span>}; <span class="comment">%or {} or {file0.csv, file1.csv... etc.}</span>
+files = {};
+<span class="keyword">if</span> length(files) &lt;= 0
+    files = uigetfile(<span class="string">'*.csv'</span>,<span class="string">'Select Data Set(s)'</span>,<span class="string">'MultiSelect'</span>,<span class="string">'on'</span>);
+<span class="keyword">end</span>
+<span class="keyword">if</span> ~iscell(files) <span class="comment">%force into iterable, if only 1 input file.</span>
+    files = {files};
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> i = 1:length(files)
+</pre><pre class="codeinput">    col_data   = csvread(files{i}, 1);
+    plot_until_index = col_data(:,2) - col_data(:,3);
+    thresh = 50;
+    plot_until_index = find(plot_until_index &gt; thresh, 1);
+    plot_until_index = plot_until_index - 1;
+    time_mills = col_data(1:plot_until_index,1);
+    ms_dies = time_mills(plot_until_index);
+    min_dies = ms_dies ./(1000 .* 60);
+    fprintf(<span class="string">'\nBattery Dies after %.3f minute(s).\n'</span>, min_dies);
+    titles = {<span class="string">'Time (ms)'</span>; <span class="keyword">...</span>
+        <span class="string">'Voltage 1'</span>; <span class="string">'Voltage 2'</span>; <span class="string">'Voltage Difference'</span>; <span class="string">'Current'</span>; <span class="string">'Power'</span>};
+    time_mills = col_data(1:plot_until_index,1);
+    clear <span class="string">data</span>;
+    total_plots = min(size(col_data));
+    total_plots = max(total_plots, 6);
+    colors = hsv(total_plots);
+    <span class="keyword">for</span> j = 1:total_plots;
+</pre><pre class="codeinput">        <span class="keyword">if</span> j &lt;= length(titles)
+            data{j}.title = titles{j};
+        <span class="keyword">else</span>
+            data{j}.title = sprintf(<span class="string">'Input %.0d'</span>, j);
+        <span class="keyword">end</span>
+        <span class="comment">%data{j}.title = sprintf('Input %.0d', j);</span>
+        <span class="keyword">if</span> j &lt;= min(size(col_data))
+            data{j}.y     = col_data(1:plot_until_index,j);
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> (j &gt; 1) .* (j&lt;4)
+            data{j}.y = 5.0 .* data{j}.y ./ 1024.0;
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> j == 4
+            data{j}.y = data{2}.y - data{3}.y;
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> j == 5
+            data{j}.y = data{4}.y ./ shunt_r;
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> j == 6
+            data{j}.y = data{2}.y .* data{5}.y;
+        <span class="keyword">end</span>
+        data{j}.x     = time_mills;
+        <span class="comment">% don't plot TIME vs TIME.</span>
+        <span class="keyword">if</span> j ~= 0 <span class="comment">%usually 1, debug 0</span>
+            fig = fig+1;
+            figure(fig);
+            plot(  data{j}.x, data{j}.y, <span class="string">'color'</span>, colors(j,:));
+            ylabel( data{j}.title);
+            xlabel(titles(1));
+            title(sprintf(<span class="string">'Data Set %.0d: %s'</span>, i, data{j}.title));
+        <span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_01.png" alt=""> <img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_02.png" alt=""> <img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_03.png" alt=""> <img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_04.png" alt=""> <img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_05.png" alt=""> <img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_06.png" alt=""> <pre class="codeinput">    <span class="keyword">end</span>
+</pre><pre class="codeoutput">
+Battery Dies after 57.751 minute(s).
+</pre><pre class="codeinput">    fig = fig+1;
+    figure(fig);
+    hold <span class="string">on</span>;
+    <span class="keyword">for</span> j = 2:length(data)
+        plot(data{j}.x, data{j}.y, <span class="string">'Color'</span>, colors(j,:));
+    <span class="keyword">end</span>
+    ylabel(<span class="string">'A/D Magnitude in Bits'</span>  );
+    xlabel(<span class="string">'Time in milliseconds'</span>   );
+    legend(titles(2:length(titles)) );
+    title(sprintf(<span class="string">'Data Set %.0d: %s'</span>, i, <span class="string">'All Analog Inputs Plot'</span>) );
+    hold <span class="string">off</span>;
+</pre><img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_07.png" alt=""> <pre class="codeinput">    fig = fig+1;
+    figure(fig);
+    hold <span class="string">on</span>;
+    <span class="keyword">for</span> j = 2:length(data)
+        plot(data{j}.x, data{j}.y, <span class="string">'.'</span>, <span class="string">'Color'</span>, colors(j,:));
+    <span class="keyword">end</span>
+    ylabel(<span class="string">'Magnitude'</span>  );
+    xlabel(<span class="string">'Time in milliseconds'</span>   );
+    legend(titles(2:length(titles)) );
+    title(sprintf(<span class="string">'Data Set %.0d: %s'</span>, i, <span class="string">'All Analog Inputs Plot'</span>) );
+    hold <span class="string">off</span>;
+</pre><img vspace="5" hspace="5" src="USB_Power_Bank_Drain_Log_08.png" alt=""> <pre class="codeinput">    fit = polyfit(transpose(time_mills), 1:length(time_mills),1);
+    avg_period = 1/fit(1);
+    fprintf(<span class="string">'\nData Set %s (%.0d) '</span>, files{i}, i);
+    fprintf(<span class="string">'has an Average Sampling Rate of %.3f '</span>, avg_period);
+    fprintf(<span class="string">'milliseconds.\n'</span>);
+</pre><pre class="codeoutput">
+Data Set USB_Power_Bank_Drain_log.csv (1) has an Average Sampling Rate of 25.776 milliseconds.
+</pre><pre class="codeinput">    fs_rate   = 1000/(avg_period); <span class="comment">%ms to Hz</span>
+    N_samples = length(time_mills);
+    f_axis    = linspace(-fs_rate/2,fs_rate/2,N_samples);
+</pre><pre class="codeinput">    <span class="keyword">if</span> length(data) &gt;= 6
+        avg_power = mean(data{6}.y);
+        fprintf(<span class="string">'\nAverage Power Output: %.3f Watts.'</span>, avg_power);
+        run_hour = time_mills(end);
+        run_hour = run_hour ./(1000 .* 60 .* 60);
+        fprintf(<span class="string">'\nOver %.3f Hour(s).'</span>, run_hour);
+        fprintf(<span class="string">'\nYeilds %.3f Watt-Hours.\n'</span>, avg_power .* run_hour);
+    <span class="keyword">end</span>
+</pre><pre class="codeoutput">
+Average Power Output: 5.175 Watts.
+Over 0.963 Hour(s).
+Yeilds 4.981 Watt-Hours.
+</pre><pre class="codeinput"><span class="keyword">end</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Plotting Experimental Data Set
+%close all;
+clear all;
+clc;
+fig = 0;
+
+shunt_r = 0.1598; %ohms
+
+files = {'data_take2.csv'}; %or {} or {file0.csv, file1.csv... etc.}
+files = {};
+if length(files) <= 0
+    files = uigetfile('*.csv','Select Data Set(s)','MultiSelect','on');
+end
+if ~iscell(files) %force into iterable, if only 1 input file.
+    files = {files};
+end
+
+for i = 1:length(files)
+    col_data   = csvread(files{i}, 1);
+    plot_until_index = col_data(:,2) - col_data(:,3);
+    thresh = 50;
+    plot_until_index = find(plot_until_index > thresh, 1);
+    plot_until_index = plot_until_index - 1;
+    time_mills = col_data(1:plot_until_index,1);
+    ms_dies = time_mills(plot_until_index);
+    min_dies = ms_dies ./(1000 .* 60);
+    fprintf('\nBattery Dies after %.3f minute(s).\n', min_dies);
+    titles = {'Time (ms)'; ...
+        'Voltage 1'; 'Voltage 2'; 'Voltage Difference'; 'Current'; 'Power'};
+    time_mills = col_data(1:plot_until_index,1);
+    clear data;
+    total_plots = min(size(col_data));
+    total_plots = max(total_plots, 6);
+    colors = hsv(total_plots);
+    for j = 1:total_plots;
+        if j <= length(titles)
+            data{j}.title = titles{j};
+        else
+            data{j}.title = sprintf('Input %.0d', j);
+        end
+        %data{j}.title = sprintf('Input %.0d', j);
+        if j <= min(size(col_data))
+            data{j}.y     = col_data(1:plot_until_index,j);
+        end
+        if (j > 1) .* (j<4)
+            data{j}.y = 5.0 .* data{j}.y ./ 1024.0;
+        end
+        if j == 4
+            data{j}.y = data{2}.y - data{3}.y;
+        end
+        if j == 5
+            data{j}.y = data{4}.y ./ shunt_r;
+        end
+        if j == 6
+            data{j}.y = data{2}.y .* data{5}.y;
+        end
+        data{j}.x     = time_mills;
+        % don't plot TIME vs TIME.
+        if j ~= 0 %usually 1, debug 0
+            fig = fig+1;
+            figure(fig);
+            plot(  data{j}.x, data{j}.y, 'color', colors(j,:));
+            ylabel( data{j}.title);
+            xlabel(titles(1));
+            title(sprintf('Data Set %.0d: %s', i, data{j}.title));
+        end
+        %%
+    end
+    %%
+    fig = fig+1;
+    figure(fig);
+    hold on;
+    for j = 2:length(data)
+        plot(data{j}.x, data{j}.y, 'Color', colors(j,:));
+    end
+    ylabel('A/D Magnitude in Bits'  );
+    xlabel('Time in milliseconds'   );
+    legend(titles(2:length(titles)) );
+    title(sprintf('Data Set %.0d: %s', i, 'All Analog Inputs Plot') );
+    hold off;
+    %%
+    fig = fig+1;
+    figure(fig);
+    hold on;
+    for j = 2:length(data)
+        plot(data{j}.x, data{j}.y, '.', 'Color', colors(j,:));
+    end
+    ylabel('Magnitude'  );
+    xlabel('Time in milliseconds'   );
+    legend(titles(2:length(titles)) );
+    title(sprintf('Data Set %.0d: %s', i, 'All Analog Inputs Plot') );
+    hold off;
+    %%
+    fit = polyfit(transpose(time_mills), 1:length(time_mills),1);
+    avg_period = 1/fit(1);
+    fprintf('\nData Set %s (%.0d) ', files{i}, i);
+    fprintf('has an Average Sampling Rate of %.3f ', avg_period);
+    fprintf('milliseconds.\n');
+    %%
+    fs_rate   = 1000/(avg_period); %ms to Hz
+    N_samples = length(time_mills);
+    f_axis    = linspace(-fs_rate/2,fs_rate/2,N_samples);
+    %%
+    if length(data) >= 6
+        avg_power = mean(data{6}.y);
+        fprintf('\nAverage Power Output: %.3f Watts.', avg_power);
+        run_hour = time_mills(end);
+        run_hour = run_hour ./(1000 .* 60 .* 60);
+        fprintf('\nOver %.3f Hour(s).', run_hour);
+        fprintf('\nYeilds %.3f Watt-Hours.\n', avg_power .* run_hour);
+    end
+    %%
+end
+
+##### SOURCE END #####
+--></body></html>

@@ -1,0 +1,3 @@
+https://www.adafruit.com/products/1452
+
+This theoretically could be modified to fit into existing goggles easier than the Recon Instruments Snow2, and would help bring down this (project as a product) MSRP down.

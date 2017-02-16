@@ -1,0 +1,18 @@
+Corrections?
+Slide 7:  Last two Items with white lettering are too hard to see.
+Slide 11: Battery was measured at 4.981 Watt-Hours
+Slide 11: Measured hopper power draw: 158mA@5V
+Slide 11: Therefore runtime = 4.981 / (0.158 * 5) (hours) = 6.3 Hours = 6H,18Min.
+Slide 11: Therefore the battery capacity = (4.981 Watt-Hours) / (5V) = 0.9962 Ah = 996mAh
+Slide 14: 'Commswith server' => 'Server Communication'
+Slide 14: 'Permissions are the real obstacle' => 'Configuring App Permissions Properly'
+Slide 15: Can the left axis labels be turned to a normal angle?
+Slide 15: Use a bracket to clearly indicate range of time the title is labeling?
+Slide 16: For 'Brett': Remove 'MapData' references,
+Slide 16:              Add to In-Progress 'Sensor Calibraion', 'Pi Automatic Startup Configuration'
+Slide 18: Bullet 1.1   Because of the civilian wireless spectrums utilized, it can be easily disabled or jammed by common law enforcement tactics, negating the possiblity of malicious uses.
+Slide 18: Bullet 1.2.1 Cleartext transmission methods prevents use by paramiltary entities.
+Slide 18: Bullet 2.1   Hardware design and circuit construction was plug and play by the nature of COTS
+Slide 18: Bullet 2.2   Software to link all elements was all custom designed.
+Slide 21: Missing Wires from Ultrasonic sensor to Arduino Pro Mini (16mHZ@5V)
+Slide 21: Missing Description label on the LSM90s0 (ACC/GYRO)

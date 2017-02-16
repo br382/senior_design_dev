@@ -1,0 +1,63 @@
+{
+    "dump_timestamp": "EUS 2016-05-02 14:51:45.252000", 
+    "self.errors": {}, 
+    "self.in_json_obj": {}, 
+    "self.log_file": "gui_dump.log", 
+    "self.out_json_obj": {}, 
+    "self.users": {
+        "100": {
+            "markerStruct": {
+                "batteries": [
+                    0
+                ], 
+                "paint_level": 71, 
+                "tank_pressure": 84
+            }, 
+            "name": "test uid 100", 
+            "posStruct": {
+                "altitude": -96, 
+                "heading": 346, 
+                "lat": "39.9559", 
+                "long": "-75.1892", 
+                "planet": "earth"
+            }, 
+            "uid": 100
+        }, 
+        "101": {
+            "markerStruct": {
+                "batteries": [
+                    0
+                ], 
+                "paint_level": 59, 
+                "tank_pressure": 18
+            }, 
+            "name": "test uid 101", 
+            "posStruct": {
+                "altitude": -45, 
+                "heading": 299, 
+                "lat": "39.9558", 
+                "long": "-75.1902", 
+                "planet": "earth"
+            }, 
+            "uid": 101
+        }, 
+        "102": {
+            "markerStruct": {
+                "batteries": [
+                    0
+                ], 
+                "paint_level": 63, 
+                "tank_pressure": 34
+            }, 
+            "name": "test uid 102", 
+            "posStruct": {
+                "altitude": -74, 
+                "heading": 53, 
+                "lat": "39.957", 
+                "long": "-75.1892", 
+                "planet": "earth"
+            }, 
+            "uid": 102
+        }
+    }
+}

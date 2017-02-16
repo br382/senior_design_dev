@@ -1,0 +1,90 @@
+{
+    "dump_timestamp": "EUS 2016-04-14 16:57:38.128000", 
+    "self.errors": {
+        "EUS 2016-04-14 16:46:09.925000": "_hUpdatePos() Unable to Perform Operation", 
+        "EUS 2016-04-14 16:46:09.926000": "_hUpdatePos() Unable to Perform Operation", 
+        "EUS 2016-04-14 16:47:10.294000": "_hUpdatePos() Unable to Perform Operation", 
+        "EUS 2016-04-14 16:57:08.779000": "_hUpdateUser: Unable to Perform Operation", 
+        "EUS 2016-04-14 16:57:08.780000": "_hUpdatePos() Unable to Perform Operation", 
+        "EUS 2016-04-14 16:57:38.128000": "_hUpdatePos() Unable to Perform Operation"
+    }, 
+    "self.in_json_obj": {}, 
+    "self.log_file": "dump.log", 
+    "self.out_json_obj": {}, 
+    "self.users": {
+        "118": {
+            "first_modify": "EUS 2016-04-14 16:46:09.924000", 
+            "last_modify": "EUS 2016-04-14 16:46:09.924000", 
+            "markerStruct": {
+                "batteries": [
+                    0
+                ], 
+                "first_modify": "EUS 2016-04-14 16:45:48.639000", 
+                "last_modify": "EUS 2016-04-14 16:45:48.639000", 
+                "paint_level": 0, 
+                "paint_level_full": 100, 
+                "tank_pressure": 0
+            }, 
+            "name": "", 
+            "posStruct": {
+                "altitude": 0, 
+                "first_modify": "EUS 2016-04-14 16:45:48.639000", 
+                "heading": 0, 
+                "last_modify": "EUS 2016-04-14 16:45:48.639000", 
+                "lat": "", 
+                "long": "", 
+                "planet": "earth"
+            }, 
+            "scanStruct": {
+                "first_modify": "EUS 2016-04-14 16:45:48.639000", 
+                "last_modify": "EUS 2016-04-14 16:45:48.639000", 
+                "pointStruct": {
+                    "0": {
+                        "deg_N": 0.0, 
+                        "dist_m": 0.0, 
+                        "x": 0.0, 
+                        "y": 0.0
+                    }
+                }
+            }, 
+            "uid": 118
+        }, 
+        "118": {
+            "first_modify": "EUS 2016-04-13 15:40:38.541511", 
+            "last_modify": "EUS 2016-04-13 15:40:38.541511", 
+            "markerStruct": {
+                "batteries": [
+                    0
+                ], 
+                "first_modify": "EUS 2016-04-13 15:40:35.782219", 
+                "last_modify": "EUS 2016-04-13 15:40:35.782219", 
+                "paint_level": 0, 
+                "paint_level_full": 100, 
+                "tank_pressure": 0
+            }, 
+            "name": "", 
+            "posStruct": {
+                "altitude": 0, 
+                "first_modify": "EUS 2016-04-13 15:40:35.782219", 
+                "heading": 0, 
+                "last_modify": "EUS 2016-04-13 15:40:35.782219", 
+                "lat": "", 
+                "long": "", 
+                "planet": "earth"
+            }, 
+            "scanStruct": {
+                "first_modify": "EUS 2016-04-13 15:40:35.782219", 
+                "last_modify": "EUS 2016-04-13 15:40:35.782219", 
+                "pointStruct": {
+                    "0": {
+                        "deg_N": 0.0, 
+                        "dist_m": 0.0, 
+                        "x": 0.0, 
+                        "y": 0.0
+                    }
+                }
+            }, 
+            "uid": 118
+        }
+    }
+}

@@ -1,0 +1,63 @@
+Download Oracle VirtualBox
+Download LinuxMint Cinnamon iso
+New machine
+	- Use Cinnamon .iso as optical drive
+	- ~40GB of space to be safe (Android SDK and NDK take up a lot of space)vim 
+	- Enable 3D Acceleration
+
+Install LinuxMint via disk located on desktop
+
+Via LinuxMint command line, $ sudo apt-get install python-kivy
+Via LinuxMint command line, $ sudo apt-get install git
+Via LinuxMint command line, $ sudo apt-get install python-setuptools
+Via LinuxMint command line, $ sudo apt-get install vim
+
+At this point, use the instructions located at the following url as a guide:
+http://python-for-android.readthedocs.org/en/latest/quickstart/#the-android-ndk-version
+
+Via LinuxMint command line, $ sudo apt-get install -y build-essential ccache git zlib1g-dev python2.7 python2.7-dev libncurses5:i386 libstdc++6:i386 zlib1g:i386 openjdk-7-jdk unzip ant
+
+Via LinuxMint command line, $ git clone https://github.com/kivy/python-for-android.git
+Navigate into python-for-android base directory
+Via LinuxMint command line, $ sudo python setup.py install
+
+Download Android SDK and extract files to home directory
+Download Android NDK and navigate to target directory containing .bin executable
+Execute the following commands to extract the files:
+	$ chmod a+x android-ndk-r10e.bin
+	$ ./android-ndk-r10e.bin
+
+Set environmental variables:
+	$ export ANDROIDSDK=path/to/sdk
+	$ export ANDROIDNDK=path/to/ndk
+	$ export ANDROIDAPI=16
+	$ export ANDROIDNDKVER=r10e-4c
+
+Navigate to android-sdk/tools/ and execute:
+	$ ./android
+
+Use GUI to download required packages
+	- The big requirement for us is API 16
+	- I left all other packages that were selected by default selected
+
+Compile a distribution with the following command (there are many options associated with the 'create' command but these are essential):
+python-for-android create --dist_name=testproject --bootstrap=pygame --requirements=sdl,python2
+
+***During the distribution creation, warnings may appear notifying you that certain modules or packages may need to be installed; install them.***
+
+Can now create an APK from the project directory:
+python-for-android apk --private /path/to/your/app --package=org.example.packagename 
+    --name="Your app name" --version=0.1
+
+***AFTER APK IS CREATED***
+Disclaimer: I did all the following from a Windows machine.
+
+Download Android SDK API 16
+Place HUD Device in debug mode
+Install Google ADB Interface driver (android-sdk/tools/extras/google/.inf)
+Navigate to android-sdk/platform-tools
+	-Execute $ adb devices
+		-This will determine if the device is visible
+	-Execute $ adb -d install path/to/apk
+
+

@@ -1,0 +1,85 @@
+{
+    "70618f39-7916-4262-badd-2803ed505444": {
+        "first_modify": "EUS 2016-05-07 20:33:33.066000", 
+        "last_modify": "EUS 2016-05-07 20:33:33.066000", 
+        "markerStruct": {
+            "batteries": [
+                0
+            ], 
+            "batteries_full": [
+                5
+            ], 
+            "first_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "last_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "paint_level": 0, 
+            "paint_level_full": 100, 
+            "tank_pressure": 0, 
+            "tank_pressure_full": 0
+        }, 
+        "name": "70618f39-7916-4262-badd-2803ed505444", 
+        "posStruct": {
+            "altitude": 0, 
+            "first_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "heading": 0, 
+            "last_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "lat": "", 
+            "long": "", 
+            "planet": "earth"
+        }, 
+        "scanStruct": {
+            "first_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "last_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "pointStruct": {
+                "0": {
+                    "deg_N": 0.0, 
+                    "dist_m": 0.0, 
+                    "x": 0.0, 
+                    "y": 0.0
+                }
+            }
+        }, 
+        "uid": "70618f39-7916-4262-badd-2803ed505444"
+    }
+}{
+    "b3633ec9-02c8-4304-be20-9c3a5a689735": {
+        "first_modify": "EUS 2016-05-07 21:14:53.388000", 
+        "last_modify": "EUS 2016-05-07 21:14:53.388000", 
+        "markerStruct": {
+            "batteries": [
+                0
+            ], 
+            "batteries_full": [
+                5
+            ], 
+            "first_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "last_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "paint_level": 0, 
+            "paint_level_full": 100, 
+            "tank_pressure": 0, 
+            "tank_pressure_full": 0
+        }, 
+        "name": "b3633ec9-02c8-4304-be20-9c3a5a689735", 
+        "posStruct": {
+            "altitude": 0, 
+            "first_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "heading": 0, 
+            "last_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "lat": "", 
+            "long": "", 
+            "planet": "earth"
+        }, 
+        "scanStruct": {
+            "first_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "last_modify": "EUS 2016-05-07 20:33:19.796000", 
+            "pointStruct": {
+                "0": {
+                    "deg_N": 0.0, 
+                    "dist_m": 0.0, 
+                    "x": 0.0, 
+                    "y": 0.0
+                }
+            }
+        }, 
+        "uid": "b3633ec9-02c8-4304-be20-9c3a5a689735"
+    }
+}
