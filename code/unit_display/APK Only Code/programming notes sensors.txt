@@ -1,4 +1,0 @@
-NFC ID tags with embedded user preferences is a highly hyped feature not currently on the roadmap.
-
-battery voltage/level sensor?
-how will sensors be calibrated? will this require a gui menu/button(s)?

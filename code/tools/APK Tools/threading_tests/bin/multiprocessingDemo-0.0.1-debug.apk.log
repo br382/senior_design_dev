@@ -1,0 +1,92 @@
+D/skia    ( 2098): SkGraphics::Init() - BLTsville (CPU) dlopen success
+D/AndroidRuntime( 2098): 
+D/AndroidRuntime( 2098): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2098): CheckJNI is OFF
+D/dalvikvm( 2098): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2098): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2098): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2098): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2098): Calling main entry com.android.commands.input.Input
+I/Input   ( 2098): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_DPAD_CENTER, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=7350227, downTime=7350227, deviceId=-1, source=0x101 }
+I/Input   ( 2098): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_CENTER, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=7350227, downTime=7350227, deviceId=-1, source=0x101 }
+I/ActivityManager(  293): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.test.multiprocessingdemo/org.renpy.android.PythonActivity u=0} from pid 661
+D/AndroidRuntime( 2098): Shutting down VM
+I/AndroidRuntime( 2098): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2110): Late-enabling CheckJNI
+I/ActivityManager(  293): Start proc org.test.multiprocessingdemo:python for activity org.test.multiprocessingdemo/org.renpy.android.PythonActivity: pid=2110 uid=10006 gids={1015, 3003, 1028}
+W/ResourceType( 2110): No package identifier when getting value for resource number 0x00000000
+V/python  ( 2110): metadata fullscreen is1
+I/SDLSurface( 2110): Surface will NOT be transparent
+W/ResourceType( 2110): No package identifier when getting value for resource number 0x00000000
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libsdl.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libsdl.so 0x41356478
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libsdl_image.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libsdl_image.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/lib/libsdl_image.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libsdl_ttf.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libsdl_ttf.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/lib/libsdl_ttf.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libsdl_mixer.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libsdl_mixer.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/lib/libsdl_mixer.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libpython2.7.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libpython2.7.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/lib/libpython2.7.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libapplication.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libapplication.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/lib/libapplication.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libsdl_main.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libsdl_main.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/lib/libsdl_main.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/_io.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/_io.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/_io.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/unicodedata.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/unicodedata.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/unicodedata.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/lib/libsqlite3.so 0x41356478
+D/dalvikvm( 2110): Added shared lib /data/data/org.test.multiprocessingdemo/lib/libsqlite3.so 0x41356478
+D/dalvikvm( 2110): No JNI_OnLoad found in /data/data/org.test.multiprocessingdemo/lib/libsqlite3.so 0x41356478, skipping init
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/_sqlite3.so 0x41356478
+D/dalvikvm( 2110): Trying to load lib /data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload/_imaging.so 0x41356478
+I/python  ( 2110): Starting audio thread
+I/libEGL  ( 2110): Processor type: omap4430
+I/libEGL  ( 2110): egl.cfg: entry POWERVR_SGX540_120 omap4430
+I/libEGL  ( 2110): Picked EGL type 'POWERVR_SGX540_120' for processor 'omap4430'
+D/libEGL  ( 2110): loaded /vendor/lib/egl/libEGL_POWERVR_SGX540_120.so
+D/libEGL  ( 2110): loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
+D/libEGL  ( 2110): loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
+D/skia    ( 2098): SkGraphics::Term() dlclose() BLTsville (CPU) 
+D/OpenGLRenderer( 2110): Enabling debug mode 0
+I/SDLSurface( 2110): Choose egl configuration
+I/SDLSurface( 2110): Try to use graphics config R8G8B8A8S8
+W/SDLSurface( 2110): Create egl surface
+I/dalvikvm-heap( 2110): Grow heap (frag case) to 6.638MB for 524304-byte allocation
+I/ActivityManager(  293): Displayed org.test.multiprocessingdemo/org.renpy.android.PythonActivity: +412ms
+I/dalvikvm-heap( 2110): Grow heap (frag case) to 7.137MB for 524304-byte allocation
+I/python  ( 2110): presplash-fit is null
+I/python  ( 2110): presplash (fit=null) mx=0.417969,my=0.234375
+I/Python: ( 2110): Layout Triggered, Keyboard_height: 32
+I/libSDL  ( 2110): Physical screen resolution is 428x240
+I/python  ( 2110): Initialize Python for Android
+I/Python: ( 2110): Layout Triggered, Keyboard_height: 0
+I/python  ( 2110): ['/data/data/org.test.multiprocessingdemo/files/lib/python2.7/site-packages', '/data/data/org.test.multiprocessingdemo/files/lib/site-python']
+I/python  ( 2110): Android path ['/data/data/org.test.multiprocessingdemo/files/lib/python27.zip', '/data/data/org.test.multiprocessingdemo/files/lib/python2.7', '/data/data/org.test.multiprocessingdemo/files/lib/python2.7/lib-dynload', '/data/data/org.test.multiprocessingdemo/files/lib/python2.7/site-packages', '/data/data/org.test.multiprocessingdemo/files', '/data/data/org.test.multiprocessingdemo/files/_applibs']
+I/python  ( 2110): Android kivy bootstrap done. __name__ is __main__
+I/python  ( 2110): Run user program, change dir and execute main.py
+I/python  ( 2110): Traceback (most recent call last):
+I/python  ( 2110):   File "/home/acer/socketExchange/.buildozer/android/app/main.py", line 3, in <module>
+I/python  ( 2110):   File "/home/acer/socketExchange/.buildozer/android/app/multiprocessingDemo.py", line 1, in <module>
+I/python  ( 2110):   File "/home/acer/socketExchange/.buildozer/android/platform/python-for-android/build/python-install/lib/python2.7/multiprocessing/__init__.py", line 84, in <module>
+I/python  ( 2110): ImportError: No module named _multiprocessing
+I/python  ( 2110): Python for android ended.
+I/AndroidRuntime( 2110): VM exiting with result code 0, cleanup skipped.
+I/WindowState(  293): WIN DEATH: Window{415df898 SurfaceView paused=false}
+I/ActivityManager(  293): Process org.test.multiprocessingdemo:python (pid 2110) has died.
+W/InputDispatcher(  293): channel '415b3320 org.test.multiprocessingdemo/org.renpy.android.PythonActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  293): channel '415b3320 org.test.multiprocessingdemo/org.renpy.android.PythonActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/ActivityManager(  293): Force removing ActivityRecord{41491040 org.test.multiprocessingdemo/org.renpy.android.PythonActivity}: app died, no saved state
+W/InputDispatcher(  293): Attempted to unregister already unregistered input channel '415b3320 org.test.multiprocessingdemo/org.renpy.android.PythonActivity (server)'
+I/WindowState(  293): WIN DEATH: Window{415b3320 org.test.multiprocessingdemo/org.renpy.android.PythonActivity paused=false}
+I/WindowManager(  293): WINDOW DIED Window{415b3320 org.test.multiprocessingdemo/org.renpy.android.PythonActivity paused=false}
+W/InputMethodManagerService(  293): Got RemoteException sending setActive(false) notification to pid 2110 uid 10006

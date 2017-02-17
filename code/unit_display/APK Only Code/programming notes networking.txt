@@ -1,7 +1,0 @@
-http://www.tutorialspoint.com/python/python_networking.htm
-
-http://code.activestate.com/recipes/578247-basic-threaded-python-tcp-server/
-
-http://www.tutorialspoint.com/python/python_multithreading.htm
-
-See also the maps notes for google maps/ other maps specific code notes
