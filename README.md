@@ -7,7 +7,7 @@
 ## docs  
 - Design ideology documentation.
 - Presentation documentation.
-- Contains development demonstration video.
+- Demonstration video: [Drexel Homepage](https://www.cs.drexel.edu/~br382/projects.html)
 
 ## Hardware Requirements
 - Platform with USB and local LAN/WiFi networking adapter.
