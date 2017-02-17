@@ -1,6 +1,7 @@
 #!/bin/sh
 # /etc/init.d/senior_design_startup.sh
 
+# Attempting to Install this project's processes to a raspberry pi 2's init.d
 
 
 #Copy these folders to $HOME: {unit_server, unit_sensors_conversion}

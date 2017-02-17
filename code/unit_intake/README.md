@@ -1,4 +1,4 @@
-# Unit: Storage Server
+# Unit: Sensors Intake
 
 ## Installation:
 
@@ -6,7 +6,7 @@
 git clone https://github.com/br382/senior_design_dev.git
 
 # cp deps into this directory...
-cp $(pwd)/senior_design_dev/code/include_python/Database/*.py $(pwd)/senior_design_dev/code/unit_storage/
+cp $(pwd)/senior_design_dev/code/include_python/Database/*.py $(pwd)/senior_design_dev/code/unit_intake/
 
 ```
 

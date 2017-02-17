@@ -1,2 +1,0 @@
-from Sensor import *
-main()
