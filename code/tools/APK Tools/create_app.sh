@@ -2,11 +2,13 @@
 app_name='my_test_app'
 my_dir="$(pwd)"
 work_dir=$HOME
+
 cd $work_dir
 mkdir ./$app_name
 cd $app_name
 buildozer init
-echo print \'Hello World \!\' > main.py
+echo "__version__ = '0.0.1'"   > main.py
+echo print \'Hello World \!\' >> main.py
 #cp $my_dir/$app_name.py .
 
 #Make Verbose Logging Output:
