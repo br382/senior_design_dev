@@ -1,5 +1,17 @@
 # Design Overview  
 
+This project combines Arduino based wireless async A/D,
+python data/identity intake, storage server, and display GUI.
+Each of which are seprate programs which may be split apart,
+or run on the same hardware device.
+Only ```unit_intake``` owns an auto-generated identity.
+All other processes can serve to any identity.
+Although primarily for ```unit_display```,
+Kivy can be used to build any of the python based units.
+To package the ```unit_display``` for Android, Kivy is used.
+
+# Design Diagram  
+
 ```
 Unit #:
 
@@ -7,12 +19,12 @@ Unit #:
 |                                                |
 |   Optional Sensors + Arduino Interface         |
 |                                                |
-|  |-----------|                  |----------|   |
-|  | Sensor 0  |  Digital/Analog  |          |   |
-|  |        :  | <==============> | Arduino  |   |
-|  | (.ino) n  |   (both .ino)    | (.ino)   |   |
-|  |-----------|  [unit_arduino]  |----------|   |
-|                                        /\      |
+|  |------------|                  |----------|  |
+|  [unit_arduino] Optional Wireless|   Xbee   |  |
+|  |         0  | <==============> | Wireless |  |
+|  | Sensors :  |  Serial Bridge   |  Serial  |  |
+|  |         n  |                  |----------|  |
+|  |------------|                        /\      |
 |                                        ||      |
 |  |------------------------| USB-Serial //      |
 |  |     [unit_intake]      |<===========/       |
@@ -38,8 +50,6 @@ Unit #:
 |  |                        |   /-               |
 |  |         (.py)          |<===- GPS Receiver  |
 |  |------------------------|   \- (Optional)    |
-|                                                |
-|                                                |
 |                                                |
 +------------------------------------------------+
 
