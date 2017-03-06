@@ -21,7 +21,7 @@ OR sepreately:
     - Connected via USB during install
     - ```bashrc``` utility functions installed
 
-* ```install_android_sdk.sh```:  
+* install_android_sdk.sh:  
     - Installs excessive number of SDKs via looping over non-obsolete packages.
     - Will take excessive SDK installation time.
 
