@@ -14,7 +14,7 @@
 
 ### Create ```unit_*```  
 - Review usage ```./senior_design_dev/code/README.md```
-- Follow Instructions for each ```./senior_design_dev/code/unit_*/README.md```
+- Follow instructions for each ```./senior_design_dev/code/unit_*/README.md```
 - Todo: ```unit_arduino, unit_display``` build/install instructions.
 
 ### Load Programs Onto Devices  
