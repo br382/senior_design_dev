@@ -49,3 +49,6 @@ do
   echo
   echo
 done
+
+#Fix Folder Access Permissions
+sudo chmod 777 -R $HOME/.android

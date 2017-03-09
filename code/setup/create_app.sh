@@ -1,3 +1,7 @@
+#Required Kivy/Buildozer Folders
+sudo chmod 777 -R $HOME/.android
+sudo chmod 777 -R $HOME/.buildozer
+
 #Create a Dummpy Kivy Test App
 app_name='my_test_app'
 my_dir="$(pwd)"
@@ -29,14 +33,21 @@ sed -i "s/package.name = myapp/package.name = $app_name/g" *.spec
 gnome-terminal -e 'sudo adb logcat' &
 #Automatic build/install/run/debuglog:
 buildozer android debug deploy run
+chmod 777 ./*
 
 #To List Installed Apps:
 sudo adb shell pm list packages
 
-#To remove an app:
+#To remotely remove an app:
+#echo "Remotely Removing App"
 #$app_name='my_test_app'
-#adbsudo uninstall org.test.$app_name
+adbsudo uninstall org.test.$app_name
+
+#Check for built .apk
+echo "===================="
+echo "Found .APK Packages:"
+find . -iname "*.apk"
+echo "===================="
 
 #Return to initial location:
 cd $my_dir
-

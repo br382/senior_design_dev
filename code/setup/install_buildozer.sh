@@ -19,3 +19,6 @@ sudo apt-get install python-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev -
 sudo pip install -I Cython==0.23
 sudo apt-get install build-essential -y
 sudo apt-get install default-jdk -y
+
+#Fixing Permissions For Buildozer Files
+sudo chmod 777 -R $HOME/.buildozer
