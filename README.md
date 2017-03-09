@@ -3,38 +3,40 @@
 ## Use on Linux Mint/Ubuntu  
 
 ### Get Source Files  
-
 - ```sudo apt-get install git```  
 - ```git clone https://github.com/br382/senior_design_dev.git```  
 
-### Install/Compile Android .APK GUI  
-
+### Install Android .APK Build Environment  
+- Installs .APK build environment.
+- Verifies by building an example ```main.py``` into an ```.apk```.
 - ```cd ./senior_design_dev/code/setup/```  
-- ```bash all.sh```  
+- ```bash all.sh``` 
 
 ### Create ```unit_*```  
 - Review usage ```./senior_design_dev/code/README.md```
 - Follow Instructions for each ```./senior_design_dev/code/unit_*/README.md```
+- Todo: ```unit_arduino, unit_display``` build/install instructions.
 
 ### Load Programs Onto Devices  
 - Copy Python, .APK, and Arduino programs to their target hardware devices.
 - See hardware/software combined usage ```./senior_design_dev/code/README.md```
-- Todo, instructions to add Python programs to Raspberry PI/init.d startup.
 - Configure WiFi or other wireless connections between devices.
+- Todo: instructions to add Python programs to Raspberry PI/init.d startup.
 
 ### Power On Systems  
 - Power on all devices.
 - Open GUI.
 - Verify all systems auto-connect to each other.
 
-## code  
+## Code  
 - This directory contains the raw source dump from the project.
-- Still in its un-curated form.
+- Todo: cleanup organization of source.
 
-## docs  
+## Docs  
 - Design ideology documentation.
 - Presentation documentation.
 - Demonstration video: [Drexel Homepage](https://www.cs.drexel.edu/~br382/projects.html)
+- Todo: cleanup organization of docs.
 
 ## Hardware Requirements
 - Platform with USB and local LAN/WiFi networking adapter.
