@@ -1,4 +1,7 @@
-# senior_design_dev
+# senior_design_dev  
+Using wearable sensors and display devices, communicate through distributed communication servers.
+This project was designed to allow relitive location and sensors sharing in the test environment of recreational paintball.
+Sensors, hardware devices, and number of units are scalable with the architecture used in this repository.
 
 ## Use on Linux Mint/Ubuntu  
 
