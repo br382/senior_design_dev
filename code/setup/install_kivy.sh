@@ -1,5 +1,9 @@
 # Install Kivy environment on Vanilla Linux Mint 17.2 x64
 sudo apt-get update
+# install python/pip
+sudo apt-get install python -y
+sudo apt-get install python-pip -y
+sudo pip install --upgrade pip
 #sudo pip uninstall Cython
 sudo pip install -I Cython==0.23
 sudo add-apt-repository ppa:kivy-team/kivy -y

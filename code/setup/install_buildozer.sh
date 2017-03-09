@@ -1,7 +1,7 @@
 # Install Buildozer enviroment on Vanilla Mint 17.2 x64
 sudo apt-get install git -y
 sudo apt-get install python-pip -y
-sudo pip install buildozer
+sudo pip install --upgrade buildozer
 #my_dir="$(pwd)"
 #cd $HOME
 #git clone https://github.com/kivy/buildozer.git
