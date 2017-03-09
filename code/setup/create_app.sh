@@ -2,6 +2,9 @@
 sudo chmod 777 -R $HOME/.android
 sudo chmod 777 -R $HOME/.buildozer
 
+#Source .bashrc if first run of all.sh
+source $HOME/.bashrc
+
 #Create a Dummpy Kivy Test App
 app_name='my_test_app'
 my_dir="$(pwd)"
